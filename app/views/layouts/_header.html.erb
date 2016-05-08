@@ -15,7 +15,7 @@
             <li class="main-menu-st">
               <a class="main-menu-item" href="list.html"><i class="fa-li fa fa-eye"></i>&nbsp; Przeglądaj</a>
             </li>
-            
+             
             <% if  user_signed_in? %>
               <li class="main-menu-st">
                 <%= link_to "Wyloguj się", destroy_user_session_path, method: :delete, :class=>"main-menu-item"%>
