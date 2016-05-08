@@ -1,0 +1,50 @@
+<header>
+  <div class="nav-row">
+      <div class="col-xs-4" style="text-align: center; margin-top: 30px;">
+        <a class="popover-link-bottom" data-container="body" data-html="true" data-toggle="popover" data-content='
+          <ul class="fa-ul">
+            <li class="main-menu-st">
+              <a class="main-menu-item" href="index.html"><i class="fa-li fa fa-home"></i>&nbsp; Strona główna</a>
+            </li>
+            <li class="main-menu-st">
+              <a class="main-menu-item" href="#"><i class="fa-li fa fa-map-marker"></i>&nbsp; Mapy</a>
+            </li>
+            <li class="main-menu-st">
+              <a class="main-menu-item" href="#"><i class="fa-li fa fa-compass"></i>&nbsp; Wycieczka</a>
+            </li>
+            <li class="main-menu-st">
+              <a class="main-menu-item" href="list.html"><i class="fa-li fa fa-eye"></i>&nbsp; Przeglądaj</a>
+            </li>
+            
+            <% if  user_signed_in? %>
+              <li class="main-menu-st">
+                <%= link_to "Wyloguj się", destroy_user_session_path, method: :delete, :class=>"main-menu-item"%>
+              </li>
+            <% end%>
+          </ul>
+        ' title="MENU">
+        <i class="fa fa-bars fa-2x" style="color: #fff;"></i>
+        </a>    
+    </div>
+      <div class="col-xs-4" style="text-align: center;">
+        <%= link_to image_tag("/assets/logo.png", :class => "logo"), root_path %>
+      </div>
+      <div class="col-xs-4" style="text-align: center; margin-top: 30px;">
+  <a class="popover-link-bottom" data-container="body" data-html="true" data-toggle="popover" data-content='
+    <ul class="fa-ul">
+        <li class="search-menu-st">
+        <form>
+          <label for="fname">Wprowadź numer eksponatu</label>
+          <input class="form-control" type="text" id="fname" name="fname" placeholder="Numer ekzpozycji"><br>
+          <button type="submit" class="btn btn-start">Szukaj</button>
+        </form>
+        </li>
+        <li class="search-menu-st">lub</li>
+        <li class="search-menu-st"><a class="main-menu-item" href="#">Zeskanuj kod QR</a></li>
+    </ul>
+          ' title="SZUKAJ">
+        <i class="fa fa-search fa-2x" style="color: #fff;"></i>
+        </a>    
+    </div>
+  </div>
+</header>
