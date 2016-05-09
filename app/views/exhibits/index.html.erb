@@ -1,35 +1,20 @@
-<p id="notice"><%= notice %></p>
+<div class="container-fluid">
+  <div class="row" style="margin-top: 100px;"> 
+    <p id="notice"><%= notice %></p>
 
-<h1>Listing Exhibits</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Author</th>
-      <th>Date of origin</th>
-      <th>Place of origin</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
     <% @exhibits.each do |exhibit| %>
-      <tr>
-        <td><%= exhibit.title %></td>
-        <td><%= exhibit.author %></td>
-        <td><%= exhibit.date_of_origin %></td>
-        <td><%= exhibit.place_of_origin %></td>
-        <td><%= exhibit.description %></td>
-        <td><%= link_to 'Show', exhibit %></td>
-        <td><%= link_to 'Edit', edit_exhibit_path(exhibit) %></td>
-        <td><%= link_to 'Destroy', exhibit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <div class="col-md-3 col-sm-6 col-xs-12" style="margin-top:20px;">
+        <div class="media">
+          <a class="pull-left" href="item.html">
+            <img class="media-object img-circle browse-img-style" src="images/img_1.png" alt="...">
+          </a>
+          <div class="media-body">
+            <%= link_to exhibit.title, exhibit, :class=> "h4 media-heading browse-h4-style" %>
+            <h5 class="browse-h5-style"><%= exhibit.author %></h5>
+            <h5 class="browse-h5-style"><%= exhibit.place_of_origin %>, <%= exhibit.date_of_origin %></h5>
+          </div>
+        </div>
+      </div>
     <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Exhibit', new_exhibit_path %>
+  </div>
+</div>

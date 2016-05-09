@@ -1,29 +1,73 @@
-<p id="notice"><%= notice %></p>
+<div class="container-fluid">
+  <div class="row" style="margin-top: 100px;"> 
+    <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @exhibit.title %>
-</p>
+    <div class="row" style="margin-top: 15px;">
+      <div class="col-xs-12"><img class="media-object img-rounded img-responsive" src="images/img_2.png" alt="..."></div>
+    </div>  
 
-<p>
-  <strong>Author:</strong>
-  <%= @exhibit.author %>
-</p>
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="item-style1">
+          <%= @exhibit.title %>
+        </p>
+        <p class="item-style2">
+          <%= @exhibit.author %>
+          <br>
+          <%= @exhibit.place_of_origin %>, <%= @exhibit.date_of_origin %>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12"><p class="item-style3">Informacje</p></div>
+    </div>  
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="item-style4">
+         <%= @exhibit.description %>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12"><p class="item-style3">Ciekawostki</p></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+      <p class="item-style4">
 
-<p>
-  <strong>Date of origin:</strong>
-  <%= @exhibit.date_of_origin %>
-</p>
+      </p>
+    </div>
 
-<p>
-  <strong>Place of origin:</strong>
-  <%= @exhibit.place_of_origin %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @exhibit.description %>
-</p>
-
-<%= link_to 'Edit', edit_exhibit_path(@exhibit) %> |
-<%= link_to 'Back', exhibits_path %>
+    <div class="row">
+      <div class="col-xs-12"><p class="item-style1">QUIZ</p></div>
+    </div>  
+    <div class="row">
+      <div class="col-xs-12"><p class="item-style3">Pytanie 1</p></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="item-style4">Doryforos, rekonstrukcja rzeźby Polikleta z Argos z ok. 450–440 p.n.e.?</p>
+        <div class="radio">
+          <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            Odpowiedź 1
+          </label>
+        </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          Odpowiedź 2
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" checked>
+            Odpowiedź 3
+          </label>
+        </div>
+      </div>
+    </div>
+    <%= link_to 'Edit', edit_exhibit_path(@exhibit) %> |
+    <%= link_to 'Back', exhibits_path %>
+  </div>
+</div>
