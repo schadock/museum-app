@@ -23,7 +23,6 @@
               <li class="main-menu-st">
                 <%= link_to "Zaloguj się", new_user_session_path, :class=> "main-menu-item" %>
               </li>
-              
               <% else %>
               <li class="main-menu-st">
                 <%= link_to "Wyloguj się", destroy_user_session_path, method: :delete, :class=>"main-menu-item"%>
