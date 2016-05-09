@@ -25,6 +25,9 @@
               </li>
               <% else %>
               <li class="main-menu-st">
+                <%= link_to "Dodaj Eksponat", new_exhibit_path, :class=>"main-menu-item"%>
+              </li>
+              <li class="main-menu-st">
                 <%= link_to "Wyloguj się", destroy_user_session_path, method: :delete, :class=>"main-menu-item"%>
               </li>
             <% end%>
