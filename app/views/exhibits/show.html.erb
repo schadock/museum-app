@@ -1,9 +1,12 @@
 <div class="container-fluid">
   <div class="row" style="margin-top: 100px;"> 
     <p id="notice"><%= notice %></p>
-
+    <div class="center">
     <div class="row" style="margin-top: 15px;">
-      <div class="col-xs-12"><img class="media-object img-rounded img-responsive" src="images/img_2.png" alt="..."></div>
+      <div class="center-img"><div class="col-xs-12">
+        <%= image_tag @exhibit.avatar.url(:medium) %>
+      </div>
+      </div>
     </div>  
 
     <div class="row">
@@ -36,15 +39,13 @@
       <p class="item-style4">
 
       </p>
-    </div>
+    
 
     <div class="row">
       <div class="col-xs-12"><p class="item-style1">QUIZ</p></div>
-    </div>  
-    <div class="row">
+    
       <div class="col-xs-12"><p class="item-style3">Pytanie 1</p></div>
-    </div>
-    <div class="row">
+    
       <div class="col-xs-12">
         <p class="item-style4">Doryforos, rekonstrukcja rzeźby Polikleta z Argos z ok. 450–440 p.n.e.?</p>
         <div class="radio">
@@ -69,5 +70,6 @@
     </div>
     <%= link_to 'Edit', edit_exhibit_path(@exhibit) %> |
     <%= link_to 'Back', exhibits_path %>
+    </div></div>
   </div>
 </div>

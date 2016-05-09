@@ -1,13 +1,11 @@
 <div class="container-fluid">
   <div class="row" style="margin-top: 100px;"> 
     <p id="notice"><%= notice %></p>
-
+    <div class="center">
     <% @exhibits.each do |exhibit| %>
       <div class="col-md-3 col-sm-6 col-xs-12" style="margin-top:20px;">
         <div class="media">
-          <a class="pull-left" href="item.html">
-            <img class="media-object img-circle browse-img-style" src="images/img_1.png" alt="...">
-          </a>
+            <%= link_to image_tag(exhibit.avatar(:thumb), :class=>"media-object img-circle browse-img-style"), exhibit, :class=>"pull-left" %> 
           <div class="media-body">
             <%= link_to exhibit.title, exhibit, :class=> "h4 media-heading browse-h4-style" %>
             <h5 class="browse-h5-style"><%= exhibit.author %></h5>
@@ -16,5 +14,6 @@
         </div>
       </div>
     <% end %>
+    </div>
   </div>
 </div>

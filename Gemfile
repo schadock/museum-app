@@ -12,6 +12,7 @@ gem 'devise', '~> 3.5', '>= 3.5.2'
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'font-awesome-sass'
+gem 'paperclip', '~> 4.3', '>= 4.3.6'
 
 group :development, :test do
   gem 'byebug'
