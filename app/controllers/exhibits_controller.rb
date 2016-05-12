@@ -4,7 +4,7 @@ class ExhibitsController < ApplicationController
   # GET /exhibits
   # GET /exhibits.json
   def index
-    @exhibits = Exhibit.search(params[:keyword ])
+    @exhibits = Exhibit.search(params[:keyword])
   end
 
   # GET /exhibits/1
