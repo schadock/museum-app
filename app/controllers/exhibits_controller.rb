@@ -4,7 +4,7 @@ class ExhibitsController < ApplicationController
   # GET /exhibits
   # GET /exhibits.json
   def index
-    @exhibits = Exhibit.all
+    @exhibits = Exhibit.search(params[:keyword ])
   end
 
   # GET /exhibits/1
@@ -69,6 +69,6 @@ class ExhibitsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def exhibit_params
-      params.require(:exhibit).permit(:title, :author, :date_of_origin, :description, :extra ,:avatar)
+      params.require(:exhibit).permit(:title, :author, :date_of_origin, :description, :extra , :exhibit_id ,:avatar)
     end
 end
