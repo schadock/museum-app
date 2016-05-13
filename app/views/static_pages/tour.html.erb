@@ -1,27 +1,6 @@
 <div class="container-fluid" style="margin-top: 100px;width:90%;">
     <p id="notice"><%= notice %></p>   
-    <div class="row center"></div>
-    <form>
-      <div class='col-xs-12'>
-        <input type='text' class='form-control' value='<%= params[:keyword] %>' name='keyword' placeholder='Szukaj' ></input>
-      </div>
-    </form>
-     </div></div>
-    <div class="row" style="width:90%;">
-    <% @exhibits.each do |exhibit| %>
-        <div class="col-xs-12" > 
-        
-          <div class="pull-left">
-            <%= link_to image_tag(exhibit.avatar(:thumb), :class=>"img-circle browse-img-style"), exhibit%> 
-          </div>
-          <div class="media-body">
-            <%= link_to exhibit.title, exhibit, :class=> "h4 browse-h4-style" %>
-            <h5 class="browse-h5-style"><%= exhibit.author %></h5>
-            <h5 class="browse-h5-style"><%= exhibit.date_of_origin %></h5>
-          </div>  
-        </div>
-    <% end %>
-    </div>
+    <%= render 'exhibits/list' %>
 </div> 
 
 
