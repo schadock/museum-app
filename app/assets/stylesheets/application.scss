@@ -42,8 +42,34 @@ body{
 }
 
 .mg-medium{
-	margin: 50 10;
+	margin: 15px 10px;
 }
+
+.mg-around{
+	margin: 10px 10px;
+
+}
+
+.padd{
+	padding-left: 10%;
+	@media (max-width: 767px) {
+		padding-left: 2%;}
+	@media (max-width: 560px) {
+		padding-left: 10%;
+		padding-top: 5%;
+		text-align: center;
+	}
+}
+
+.logo {
+	width: 80px;
+	margin-top:15px;
+}
+
+.pull-left {
+	@media (max-width: 568px) {
+	padding-left: 30%;}
+	}
 
 .btn-start {
 	color: #fff;
@@ -100,15 +126,6 @@ body{
     color: #000;
     background-color: rgba(0,0,0,0);
     border: 2px solid #000;
-}
-
-.margin-top {
-	margin-top: 15px;
-}
-
-.logo {
-	width: 80px;
-	margin-top:15px;
 }
 
 .popover {
@@ -271,8 +288,9 @@ body{
 			}
 
 			.browse-img-style {
-			  width: 100px;
-			}
+				@media (max-width: 767px) {
+				max-width: 50%;}
+    	}
 
 			.browse-h4-style {
 			  color: #2e2e2e;

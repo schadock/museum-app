@@ -1,7 +1,7 @@
 class Exhibit < ActiveRecord::Base
   belongs_to :user
   belongs_to :type
-  has_attached_file :avatar, styles: { medium: "800x600>", thumb: "100x100#" }, 
+  has_attached_file :avatar, styles: { medium: "800x600>", thumb: "100x100>" }, 
                     default_url: "/images/missing.png"
   validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\Z/
   #scope :search, ->(keyword){ where('keywords LIKE ?', "%#{keyword.to_s.downcase}") if keyword.present? }
