@@ -1,10 +1,13 @@
 class Exhibit < ActiveRecord::Base
   belongs_to :user
+  belongs_to :type
   has_attached_file :avatar, styles: { medium: "800x600>", thumb: "100x100#" }, 
                     default_url: "/images/missing.png"
   validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\Z/
   #scope :search, ->(keyword){ where('keywords LIKE ?', "%#{keyword.to_s.downcase}") if keyword.present? }
   scope :search, ->(keyword){ where(ex_id: keyword) if keyword.present? }
+  scope :filter, ->(name){ 
+    joins(:type).where('types.name= ?', name) if name.present?}
 
   before_save :set_keywords
 

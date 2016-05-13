@@ -15,7 +15,10 @@
             <li class="main-menu-st">
               <i class="fa-li fa fa-eye"></i></i><%= link_to "Eksponaty", exhibits_path, :class=> "main-menu-item" %>
             </li>
-            
+            <li class="main-menu-st">
+              <i class="fa-li fa fa-eye"></i></i><%= link_to "Kolekcje", 
+            static_pages_collections_path, :class=> "main-menu-item" %>
+            </li>
             <% unless  user_signed_in? %>
               <li class="main-menu-st">
                 <%= link_to "Zarejestruj się", new_user_registration_path, :class=> "main-menu-item" %>

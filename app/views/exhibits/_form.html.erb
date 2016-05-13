@@ -33,11 +33,13 @@
   </div>
   <div class="text-center">
     <div class="field">
-    
       <%= f.label :avatar %><br>
       <%= f.file_field :avatar %>
-      
     </div>
+  </div>
+  <div class="field">
+    <%= select_tag( :type_id, options_for_select(@types), :prompt => "Wybierz kategorie") %>
+
   </div>
   <div class="field">
     <%= f.label :ex_id %><br>

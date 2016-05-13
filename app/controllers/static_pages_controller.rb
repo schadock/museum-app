@@ -7,4 +7,8 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
+
+  def collections
+    @types = Type.all    
+  end
 end

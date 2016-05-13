@@ -4,7 +4,7 @@ class ExhibitsController < ApplicationController
   # GET /exhibits
   # GET /exhibits.json
   def index
-    @exhibits = Exhibit.search(params[:keyword])
+    @exhibits = Exhibit.search(params[:keyword]).filter(params[:filter])
   end
 
   # GET /exhibits/1
@@ -15,16 +15,19 @@ class ExhibitsController < ApplicationController
   # GET /exhibits/new
   def new
     @exhibit = Exhibit.new
+    @types = Type.all.map{ |t| [ t.name, t.id ] }
   end
 
   # GET /exhibits/1/edit
   def edit
+    @types = Type.all.map{ |t| [ t.name, t.id ] }
   end
 
   # POST /exhibits
   # POST /exhibits.json
   def create
     @exhibit = Exhibit.new(exhibit_params)
+    @exhibit.type_id = params[:type_id]
 
     respond_to do |format|
       if @exhibit.save
@@ -40,6 +43,7 @@ class ExhibitsController < ApplicationController
   # PATCH/PUT /exhibits/1
   # PATCH/PUT /exhibits/1.json
   def update
+    @exhibit.type_id = params[:type_id]
     respond_to do |format|
       if @exhibit.update(exhibit_params)
         format.html { redirect_to @exhibit, notice: 'Exhibit was successfully updated.' }
