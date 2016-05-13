@@ -11,4 +11,8 @@ class StaticPagesController < ApplicationController
   def collections
     @types = Type.all    
   end
+
+  def tour
+    @exhibits = Exhibit.search(params[:keyword]).filter(params[:filter]).order(ex_id: :asc)
+  end
 end
