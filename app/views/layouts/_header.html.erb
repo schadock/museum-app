@@ -19,7 +19,7 @@
               <i class="fa-li fa fa-eye"></i></i><%= link_to "Kolekcje", 
             static_pages_collections_path, :class=> "main-menu-item" %>
             </li>
-            <% unless  user_signed_in? %>
+            <% unless user_signed_in? %>
               <li class="main-menu-st">
                 <%= link_to "Zarejestruj się", new_user_registration_path, :class=> "main-menu-item" %>
               </li> 

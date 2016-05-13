@@ -23,7 +23,9 @@
           <%= @exhibit.title %>
         </p>
         <p class="item-style2">
+          <% if @exhibit.type.name%>
           <%= @exhibit.type.name %>
+          <% end %>
           <br>
           <%= @exhibit.author %>
           <br>
