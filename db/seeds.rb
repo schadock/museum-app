@@ -5,14 +5,35 @@ rzezba = Type.create!(name: 'Rzeźba')
 popiersie = Type.create!(name: 'Popiersie')
 plaskorzezba = Type.create!(name: 'Plaskorzezba')
 
-Exhibit.create(title: 'Lekyt nagrobny', author:  'nieznany twórca attycki', date_of_origin: 'po 316 r. p.n.e.', description: 'Lekyt – smukły dzban, służący do przechowywania oliwy, zyskał u schyłku IV w. p.n.e. nową funkcję i nowe znaczenie. W 316 r. p.n.e. władze Aten, walcząc z nadmiernym ich zadaniem zbytkiem grobowców, zakazały wykonywania stel nagrobnych. W związku z tym wykształcił się zwyczaj ustawiania na grobach lekytów, nawiązujących do obrzędów pogrzebowych. Lekyty nagrobne  były jednak znacznie większe niż ich pierwowzory i w przeciwieństwie do nich kamienne, a nie ceramiczne. Płaskorzeźbione dekoracje odwoływały się do wierzeń w życie pozagrobowe.', extra: 'ciekawostka', ex_id: '1', type: rzezba)
+Exhibit.create(
+  title: 'Lekyt nagrobny', 
+  author:  'nieznany twórca attycki', 
+  date_of_origin: 'po 316 r. p.n.e.', 
+  description: 'Lekyt – smukły dzban, służący do przechowywania oliwy, zyskał u schyłku IV w. p.n.e. nową funkcję i nowe znaczenie. W 316 r. p.n.e. władze Aten, walcząc z nadmiernym ich zadaniem zbytkiem grobowców, zakazały wykonywania stel nagrobnych. W związku z tym wykształcił się zwyczaj ustawiania na grobach lekytów, nawiązujących do obrzędów pogrzebowych. Lekyty nagrobne  były jednak znacznie większe niż ich pierwowzory i w przeciwieństwie do nich kamienne, a nie ceramiczne. Płaskorzeźbione dekoracje odwoływały się do wierzeń w życie pozagrobowe.', 
+  extra: 'ciekawostka', 
+  ex_id: '1', 
+  type: rzezba)
 
-Exhibit.create(title: 'Woźnica Diomedesa (tzw. Auriga)', author:  'Pitagoras z Region', date_of_origin: 'ok. 475 r. p.n.e.', description: 'Posąg Aurigi jest jedną z niewielu rzeźb antycznych z brązu, zachowanych do naszych czasów. Stanowił on fragment wielkiego pomnika władcy sycylijskiego Polyzatosa. Wystawił on w wyścigach organizowanych na cześć Apolla w jego sanktuarium w Delos zaprzęg, który wygrał zawody. Pomnik przedstawiał kwadrygę z woźnicą i stojącym obok Polyzatosem, ustawioną na wysokim cokole, obok świątyni Apolla. Rzeźbę usytuowano tak, by mogli ją oglądać ludzie idący w procesji wokół świątyni, stąd pochylenie i zwrócenie głowy woźnicy w bok. Jest to dzieło przełomowe, mające jeszcze cechy dawnego, archaicznego stylu rzeźby greckiej, a zarazem kryjące zapowiedź dążenia do naśladowania rzeczywistości, właściwą sztuce okresu klasycznego. Pionowe fałdy długiej szaty (xystis) kojarzące się ze żłobkowaniem kolumny, nadają postaci monumentalny, jeszcze nieco archaiczny  charakter. Lekki skręt ciała sprawiający, że postać staje się bardziej naturalna, a także szczegółowo opracowana twarz z migdałowymi oczami i prostym nosem zapowiadają już sztukę okresu klasycznego.
-Pomnik został zniszczony w wyniku osunięcia się skał w 372 r p.n.e. Resztki monumentu odnaleziono dopiero w 1896 r., zatem w czasach powstawania szczecińskiej kolekcji Auriga był jednym z najnowszych i najciekawszych odkryć.', extra: 'ciekawostka', ex_id: '2', type: rzezba)
+Exhibit.create(
+  title: 'Woźnica Diomedesa (tzw. Auriga)', 
+  author:  'Pitagoras z Region', 
+  date_of_origin: 'ok. 475 r. p.n.e.', 
+  description: 'Posąg Aurigi jest jedną z niewielu rzeźb antycznych z brązu, zachowanych do naszych czasów. Stanowił on fragment wielkiego pomnika władcy sycylijskiego Polyzatosa. Wystawił on w wyścigach organizowanych na cześć Apolla w jego sanktuarium w Delos zaprzęg, który wygrał zawody. Pomnik przedstawiał kwadrygę z woźnicą i stojącym obok Polyzatosem, ustawioną na wysokim cokole, obok świątyni Apolla. Rzeźbę usytuowano tak, by mogli ją oglądać ludzie idący w procesji wokół świątyni, stąd pochylenie i zwrócenie głowy woźnicy w bok. Jest to dzieło przełomowe, mające jeszcze cechy dawnego, archaicznego stylu rzeźby greckiej, a zarazem kryjące zapowiedź dążenia do naśladowania rzeczywistości, właściwą sztuce okresu klasycznego. Pionowe fałdy długiej szaty (xystis) kojarzące się ze żłobkowaniem kolumny, nadają postaci monumentalny, jeszcze nieco archaiczny  charakter. Lekki skręt ciała sprawiający, że postać staje się bardziej naturalna, a także szczegółowo opracowana twarz z migdałowymi oczami i prostym nosem zapowiadają już sztukę okresu klasycznego.
+Pomnik został zniszczony w wyniku osunięcia się skał w 372 r p.n.e. Resztki monumentu odnaleziono dopiero w 1896 r., zatem w czasach powstawania szczecińskiej kolekcji Auriga był jednym z najnowszych i najciekawszych odkryć.', 
+  extra: 'ciekawostka', 
+  ex_id: '2', 
+  type: rzezba)
 
-Exhibit.create(title: 'Dyskobol', author:  'Myron z Eleuterai', date_of_origin: 'ok. 460–450 r. p.n.e.', description: 'Myron, jeden z najsłynniejszych rzeźbiarzy okresu klasycznego, tworzył ok. 480–445 r. p.n.e., głównie w Atenach. Sławę przyniosły mu rzeźby ustawione na ateńskim Akropolu, wśród nich przedstawienie prowadzonej na ofiarę krowy, tak podobno realistyczne, że miały się na nie rzucać lwy. 
+Exhibit.create(
+  title: 'Dyskobol', 
+  author:  'Myron z Eleuterai', 
+  date_of_origin: 'ok. 460–450 r. p.n.e.', 
+  description: 'Myron, jeden z najsłynniejszych rzeźbiarzy okresu klasycznego, tworzył ok. 480–445 r. p.n.e., głównie w Atenach. Sławę przyniosły mu rzeźby ustawione na ateńskim Akropolu, wśród nich przedstawienie prowadzonej na ofiarę krowy, tak podobno realistyczne, że miały się na nie rzucać lwy. 
 „Dyskobol” ceniony był ze względu na efektowność ujęcia tematu. Postać została przedstawiona w krótkiej chwili spoczynku, skupienia sił przed wykonaniem gwałtownego ruchu. Mimo swego nowatorstwa rzeźba Myrona zachowała wiele cech sztuki okresu archaicznego. Jest ona „oderwanym od tła reliefem”, przeznaczonym do oglądania wyłącznie z jednej, frontalnej perspektywy. 
-Oryginał rzeźby nie zachował się, a jej kształt znany jest dzięki kilku uszkodzonym kopiom i opisom. Szczeciński „Dyskobol” jest rekonstrukcją domniemanego pierwotnego wyglądu dzieła Myrona, wykonaną według  koncepcji  A. Furtwänglera  (uzupełniono m.in. głowę i rękę z dyskiem).', extra: 'ciekawostka', ex_id: '3', type: rzezba)
+Oryginał rzeźby nie zachował się, a jej kształt znany jest dzięki kilku uszkodzonym kopiom i opisom. Szczeciński „Dyskobol” jest rekonstrukcją domniemanego pierwotnego wyglądu dzieła Myrona, wykonaną według  koncepcji  A. Furtwänglera  (uzupełniono m.in. głowę i rękę z dyskiem).', 
+  extra: 'ciekawostka', 
+  ex_id: '3', 
+  type: rzezba)
 
 Exhibit.create(title: 'Atena i Marsjasz', author:  'Myron z Eleuterai', date_of_origin: 'ok. 457–447 r. p.n.e.', description: 'Rzeźba Myrona odnosi się do jednego z kluczowych momentów mitu o satyrze Marsjaszu. Atena wymyśliła nowy instrument – aulos (rodzaj fletu) – jednak zauważyła, że w czasie gry trzeba wydymać policzki, co zniekształca jej twarz. Bogini porzuciła więc instrument, który podniósł Marsjasz, z czasem stając się mistrzem gry na aulosie. Myron przedstawił chwilę, w której Marsjasz spostrzegł porzucony flet i chce go podnieść, powstrzymywany strachem przed boginią. Myron skontrastował postaci, starając się oddać ich charakter. Z jednej strony powściągliwa, surowa postać Ateny, ubranej w długą, skromną szatę, z drugiej – nagi Marsjasz o tanecznych ruchach. Jego sylwetka inspirowana była zapewne tradycją spektakli i pochodów organizowanych ku czci Dionizjosa, boga winnej latorośli i płodnych sił przyrody.
 Oryginał dzieła nie zachował się, znany był jednak z opisów. Na ich podstawie w XIX w. rozpoznano w kilku marmurowych posągach z czasów rzymskich kopie poszczególnych figur wchodzących w skład dzieła Myrona. Na ich podstawie A. Furtwängler dokonał rekonstrukcji całej grupy. W późniejszych latach jego koncepcję krytykowano, wskazując m.in. na to, że dynamiczna postać Marsjasza pochodzi zapewne z późniejszych czasów. Niezależnie od historycznej poprawności szczecińska rzeźba świadczy o tym, jak żywa była tradycja antyczna w Europie przełomu XIX i XX w., i jak głębokie było pragnienie wyjaśnienia związanych z nią zagadek.', extra: 'ciekawostka', ex_id: '4')

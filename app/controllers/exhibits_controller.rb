@@ -5,6 +5,7 @@ class ExhibitsController < ApplicationController
   # GET /exhibits.json
   def index
     @exhibits = Exhibit.search(params[:keyword]).filter(params[:filter])
+    @tours = Tour.all
   end
 
   # GET /exhibits/1
@@ -16,11 +17,13 @@ class ExhibitsController < ApplicationController
   def new
     @exhibit = Exhibit.new
     @types = Type.all.map{ |t| [ t.name, t.id ] }
+    @tours= Tour.all.map{ |t| [ t.name, t.id ] }
   end
 
   # GET /exhibits/1/edit
   def edit
     @types = Type.all.map{ |t| [ t.name, t.id ] }
+    @tours = Tour.all.map{ |t| [ t.name, t.id ] }
   end
 
   # POST /exhibits

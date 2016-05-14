@@ -39,7 +39,9 @@
   </div>
   <div class="field">
     <%= select_tag( :type_id, options_for_select(@types), :prompt => "Wybierz kategorie") %>
-
+  </div>
+  <div class="field">
+    <%= select_tag( :tour_id, options_for_select(@tours), :prompt => "Wybierz kategorie") %>
   </div>
   <div class="field">
     <%= f.label :ex_id %><br>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  exhibit_id: 
+  tour_id: 
+  positon: 1
+
+two:
+  exhibit_id: 
+  tour_id: 
+  positon: 1

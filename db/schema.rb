@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160512230848) do
+ActiveRecord::Schema.define(version: 20160514155916) do
+
+  create_table "exhibit_tours", force: :cascade do |t|
+    t.integer  "exhibit_id"
+    t.integer  "tour_id"
+    t.integer  "positon"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "exhibit_tours", ["exhibit_id"], name: "index_exhibit_tours_on_exhibit_id"
+  add_index "exhibit_tours", ["tour_id"], name: "index_exhibit_tours_on_tour_id"
 
   create_table "exhibits", force: :cascade do |t|
     t.string   "title"
@@ -31,6 +42,12 @@ ActiveRecord::Schema.define(version: 20160512230848) do
   end
 
   add_index "exhibits", ["type_id"], name: "index_exhibits_on_type_id"
+
+  create_table "tours", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "types", force: :cascade do |t|
     t.string   "name"

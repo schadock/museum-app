@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :tours
   resources :exhibits
   devise_for :users
   get 'static_pages/home'
