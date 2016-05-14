@@ -43,20 +43,21 @@
         <%= link_to image_tag("/assets/logo.png", :class => "logo"), root_path %>
       </div>
       <div class="col-xs-4" style="text-align: center; margin-top: 30px;">
-  <a class="popover-link-bottom" data-container="body" data-html="true" data-toggle="popover" data-content='
-    <ul class="fa-ul">
-        <li class="search-menu-st">
-        <label for="fname">Wprowadź numer eksponatu</label>
-        <form>
-        
-        </form>
-        </li>
-        <li class="search-menu-st">lub</li>
-        <li class="search-menu-st"><a class="main-menu-item" href="#">Zeskanuj kod QR</a></li>
-    </ul>
-          ' title="SZUKAJ">
-        <i class="fa fa-search fa-2x" style="color: #fff;"></i>
-        </a>    
-    </div>
+        <a class="popover-link-bottom" data-container="body" data-html="true" data-toggle="popover" data-content='
+            <ul class="fa-ul fa-ul2">
+              <li class="search-menu-st">
+                <form>
+                  <label for="fname">Wprowadź numer eksponatu</label>
+                  <input class="form-control" type="text" id="fname" name="keyword" value="<%= params[:keyword] %>" placeholder="Numer ekzpozycji"><br>
+                  <button type="submit" class="btn btn-start">Szukaj</button>
+                </form>
+              </li>
+              <li class="search-menu-st">lub</li>
+              <li class="search-menu-st"><a class="main-menu-item" href="#">Zeskanuj kod QR</a></li>
+            </ul>
+            ' title="SZUKAJ">
+            <i class="fa fa-search fa-2x" style="color: #fff;"></i>
+          </a>    
+      </div>    
   </div>
 </header>
