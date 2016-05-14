@@ -10,6 +10,14 @@
     <% if user_signed_in? %>
       <%= link_to 'Edit', edit_exhibit_path(@exhibit), :class=> "btn btn-default" %> 
     <% end %>
+    <div class="center">
+      <% if @exhibit.tour_previous %>
+        <%= link_to "< Previous", @exhibit.previous %>
+      <% end %>
+      <% if @exhibit.tour_next %>
+        <%= link_to "Next >", @exhibit.next %>
+      <% end %>
+    </div>
     <div class="row" style="margin-top: 15px;">
       <div class="center-img"><div class="col-xs-12">
         <%= image_tag @exhibit.avatar.url(:medium) %>
@@ -51,15 +59,12 @@
       <p class="item-style4">
         <%= @exhibit.extra %>
       </p>
-    
-
+      
     <div class="row">
       <div class="col-xs-12"><p class="item-style1">QUIZ</p></div>
-    
       <div class="col-xs-12"><p class="item-style3">Pytanie 1</p></div>
-    
       <div class="col-xs-12">
-        <p class="item-style4">Doryforos, rekonstrukcja rzeźby Polikleta z Argos z ok. 450–440 p.n.e.?</p>
+        <p class="item-style4">TREŚĆ QUIZU</p>
         <div class="radio">
           <label>
           <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
