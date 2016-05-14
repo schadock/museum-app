@@ -30,6 +30,7 @@ body{
 .center {
     margin: 0 auto;
     width: 80%;
+    text-align: center;
 }
 .center-img {
     margin: 0 auto;
@@ -68,7 +69,7 @@ body{
 
 .pull-left {
 	@media (max-width: 568px) {
-	padding-left: 30%;}
+	padding-left: 5%;}
 	}
 
 .btn-start {

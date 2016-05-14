@@ -7,87 +7,88 @@
   <div class="row" style="margin-top: 10px;"> 
     <p id="notice"><%= notice %></p>  
     <div class="center">
-    <% if user_signed_in? %>
-      <%= link_to 'Edit', edit_exhibit_path(@exhibit), :class=> "btn btn-default" %> 
-    <% end %>
-    <div class="center">
-      <% if @exhibit.tour_previous %>
-        <%= link_to "< Previous", @exhibit.previous %>
+      <% if user_signed_in? %>
+        <%= link_to 'Edit', edit_exhibit_path(@exhibit), :class=> "btn btn-default" %> 
       <% end %>
-      <% if @exhibit.tour_next %>
-        <%= link_to "Next >", @exhibit.next %>
-      <% end %>
-    </div>
-    <div class="row" style="margin-top: 15px;">
-      <div class="center-img"><div class="col-xs-12">
-        <%= image_tag @exhibit.avatar.url(:medium) %>
-      </div>
-      </div>
-    </div>  
-
-    <div class="row">
-      <div class="col-xs-12">
-        <p class="item-style1">
-          <%= @exhibit.title %>
-        </p>
-        <p class="item-style2">
-          <% if @exhibit.type_id %>
-          <%= @exhibit.type.name %>
-          <% end %>
-          <br>
-          <%= @exhibit.author %>
-          <br>
-          <%= @exhibit.date_of_origin %>
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12"><p class="item-style3">Informacje</p></div>
-    </div>  
-    <div class="row">
-      <div class="col-xs-12">
-        <p class="item-style4">
-         <%= @exhibit.description %>
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12"><p class="item-style3">Ciekawostki</p></div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12">
-      <p class="item-style4">
-        <%= @exhibit.extra %>
-      </p>
       
-    <div class="row">
-      <div class="col-xs-12"><p class="item-style1">QUIZ</p></div>
-      <div class="col-xs-12"><p class="item-style3">Pytanie 1</p></div>
-      <div class="col-xs-12">
-        <p class="item-style4">TREŚĆ QUIZU</p>
+      <div class="row" style="margin-top: 15px;">
+        <div class="center-img"><div class="col-xs-12">
+          <%= image_tag @exhibit.avatar.url(:medium) %>
+        </div>
+        </div>
+      </div>  
+
+      <div class="row">
+        <div class="col-xs-12">
+          <p class="item-style1">
+            <%= @exhibit.title %>
+          </p>
+          <p class="item-style2">
+            <% if @exhibit.type_id %>
+            <%= @exhibit.type.name %>
+            <% end %>
+            <br>
+            <%= @exhibit.author %>
+            <br>
+            <%= @exhibit.date_of_origin %>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12"><p class="item-style3">Informacje</p></div>
+      </div>  
+      <div class="row">
+        <div class="col-xs-12">
+          <p class="item-style4">
+           <%= @exhibit.description %>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12"><p class="item-style3">Ciekawostki</p></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <p class="item-style4">
+            <%= @exhibit.extra %>
+          </p>
+        </div>
+      </div>  
+      <div class="row">
+        <div class="col-xs-12"><p class="item-style1">QUIZ</p></div>
+        <div class="col-xs-12"><p class="item-style3">Pytanie 1</p></div>
+        <div class="col-xs-12">
+          <p class="item-style4">TREŚĆ QUIZU</p>
+          <div class="radio">
+            <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              Odpowiedź 1
+            </label>
+          </div>
         <div class="radio">
           <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-            Odpowiedź 1
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+            Odpowiedź 2
           </label>
         </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-          Odpowiedź 2
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" checked>
-            Odpowiedź 3
-          </label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" checked>
+              Odpowiedź 3
+            </label>
+          </div>
         </div>
       </div>
-    </div>
-    
-    <%= link_to 'Back', exhibits_path %>
-    </div>
+      <div id="footer">
+        <div class="footer-button">
+          <% if @exhibit.tour_previous %>
+            <%= link_to "", @exhibit.previous, :class=> "fa fa-angle-left fa-3x footer-btn" %>
+          <% end %>
+          <% if @exhibit.tour_next %>
+            <%= link_to "", @exhibit.next, :class=> "fa fa-angle-right fa-3x footer-btn" %>
+          <% end %>
+        </div>
+      </div>
     </div>
   </div>
 </div>
