@@ -9,7 +9,7 @@ Exhibit.create(title: 'Lekyt nagrobny',
   author:  'nieznany twórca attycki', 
   date_of_origin: 'po 316 r. p.n.e.', 
   description: 'Lekyt – smukły dzban, służący do przechowywania oliwy, zyskał u schyłku IV w. p.n.e. nową funkcję i nowe znaczenie. W 316 r. p.n.e. władze Aten, walcząc z nadmiernym ich zadaniem zbytkiem grobowców, zakazały wykonywania stel nagrobnych. W związku z tym wykształcił się zwyczaj ustawiania na grobach lekytów, nawiązujących do obrzędów pogrzebowych. Lekyty nagrobne  były jednak znacznie większe niż ich pierwowzory i w przeciwieństwie do nich kamienne, a nie ceramiczne. Płaskorzeźbione dekoracje odwoływały się do wierzeń w życie pozagrobowe.', 
-  xtra: 'ciekawostka', 
+  extra: 'ciekawostka', 
   ex_id: '1', 
   type: rzezba)
 

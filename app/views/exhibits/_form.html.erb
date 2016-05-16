@@ -1,14 +1,13 @@
 <div class="col-xs-4">
   <form>
-    <%= form_for(@exhibit) do |f| %>
+    <%= form_for @exhibit do |f| %>
       <% if @exhibit.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(@exhibit.errors.count, "error") %> prohibited this exhibit from being saved:</h2>
-
           <ul>
-          <% @exhibit.errors.full_messages.each do |message| %>
-            <li><%= message %></li>
-          <% end %>
+            <% @exhibit.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
           </ul>
         </div>
       <% end %>
@@ -19,27 +18,27 @@
       </div>
       <div class="form-group">
          <label>Autor: </label>
-        <%= f.text_field :author, :class=>"form-control"  %>
+        <%= f.text_field :author, :class=>"form-control" %>
       </div>
       <div class="form-group">
-         <label>Data powstania: </label>
-        <%= f.number_field :date_of_origin, :class=>"form-control"  %>
+        <label>Data powstania: </label>
+        <%= f.number_field :date_of_origin, :class=>"form-control" %>
       </div>
       <div class="form-group">
          <label>Opis: </label>
-        <%= f.text_field :description, :class=>"form-control text"  %>
+        <%= f.text_field :description, :class=>"form-control text" %>
       </div>
       <div class="form-group">
-         <label>Ciekawostka: </label>
-        <%= f.text_field :extra, :class=>"form-control"  %>
+        <label>Ciekawostka: </label>
+        <%= f.text_field :extra, :class=>"form-control" %>
       </div>
       <div class="text-center"> 
-          <label>Zdjęcie: </label>
-          <%= f.file_field :avatar, :class=>"file", :id=> "file"  %>
+        <label>Zdjęcie: </label>
+        <%= f.file_field :avatar, :class=>"file", :id=> "file" %>
       </div>
       <div class="form-group">
         <label>Typ eksponatu: </label>
-        <%= select_tag( :type_id, options_for_select(@types), :prompt => "Wybierz kategorie", :class=>"form-group multiple"  )%>
+        <%=  f.select :type_id, options_for_select(@types.map { |type| [type.name]} )%>
       </div>
       <div class="form-group">
         <label>Numer eksponatu: </label>
