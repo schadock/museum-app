@@ -24,7 +24,8 @@ class ExhibitsController < ApplicationController
   # POST /exhibits
   def create
     @exhibit = Exhibit.new(exhibit_params)
-
+    
+    @exhibit.type_id = params[:type_id]
     respond_to do |format|
       if @exhibit.save
         format.html { redirect_to @exhibit, notice: 'Exhibit was successfully created.' }
@@ -66,7 +67,6 @@ class ExhibitsController < ApplicationController
                                       :author, 
                                       :date_of_origin, 
                                       :description, 
-                                      :extra,
                                       :type_id, 
                                       :ex_id,
                                       :keywords,
