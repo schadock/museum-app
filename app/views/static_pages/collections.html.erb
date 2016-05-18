@@ -4,7 +4,7 @@
     <ul>
     <% @types.each do |type| %>
       <li>
-        <%= link_to type.name, exhibits_path(filter: type.name), :class=> 'label label-primary' %>
+        <%= link_to type.name, exhibits_path(collection: type.name), :class=> 'label label-primary' %>
       </li>
     <% end %>
     </ul>

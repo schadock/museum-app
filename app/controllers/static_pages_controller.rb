@@ -13,6 +13,6 @@ class StaticPagesController < ApplicationController
   end
 
   def tour
-    @exhibits = Exhibit.search(params[:keyword]).filter(params[:filter]).order(ex_id: :asc)
+    @exhibits = Exhibit.search(params[:keyword]).collection(params[:collection]).order(ex_id: :asc)
   end
 end
