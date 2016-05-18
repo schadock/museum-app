@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160518165354) do
+ActiveRecord::Schema.define(version: 20160518201000) do
 
   create_table "exhibits", force: :cascade do |t|
     t.string   "title"
@@ -30,6 +30,15 @@ ActiveRecord::Schema.define(version: 20160518165354) do
   end
 
   add_index "exhibits", ["type_id"], name: "index_exhibits_on_type_id"
+
+  create_table "questions", force: :cascade do |t|
+    t.integer  "exhibit_id"
+    t.text     "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "questions", ["exhibit_id"], name: "index_questions_on_exhibit_id"
 
   create_table "types", force: :cascade do |t|
     t.string   "name"

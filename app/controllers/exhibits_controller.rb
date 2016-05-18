@@ -8,11 +8,15 @@ class ExhibitsController < ApplicationController
 
   # GET /exhibits/1
   def show
+
   end
 
   # GET /exhibits/new
   def new
     @exhibit = Exhibit.new
+    #@question =@exhibit.questions.build
+    3.times { @exhibit.questions.build }
+
     @types = Type.all
   end
 
@@ -69,6 +73,7 @@ class ExhibitsController < ApplicationController
                                       :type_id, 
                                       :ex_id,
                                       :keywords,
-                                      :avatar)
+                                      :avatar, 
+                                      questions_attributes: [ :id ,:exhibit_id, :content])
     end
 end
