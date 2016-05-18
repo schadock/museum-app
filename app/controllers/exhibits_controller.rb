@@ -25,7 +25,6 @@ class ExhibitsController < ApplicationController
   def create
     @exhibit = Exhibit.new(exhibit_params)
     
-    @exhibit.type_id = params[:type_id]
     respond_to do |format|
       if @exhibit.save
         format.html { redirect_to @exhibit, notice: 'Exhibit was successfully created.' }
