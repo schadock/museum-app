@@ -14,10 +14,11 @@ class ExhibitsController < ApplicationController
   # GET /exhibits/new
   def new
     @exhibit = Exhibit.new
-    #@question =@exhibit.questions.build
-    3.times { @exhibit.questions.build }
-
     @types = Type.all
+    3.times do 
+      question = @exhibit.questions.build
+      3.times { question.answers.build }
+    end
   end
 
   # GET /exhibits/1/edit
@@ -74,6 +75,7 @@ class ExhibitsController < ApplicationController
                                       :ex_id,
                                       :keywords,
                                       :avatar, 
-                                      questions_attributes: [ :id ,:exhibit_id, :content])
+                                      questions_attributes: [ :id ,:exhibit_id, :content,
+                                                              answers_attributes: [:id, :question_id, :content]])
     end
 end

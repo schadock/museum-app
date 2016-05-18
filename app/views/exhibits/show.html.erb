@@ -47,8 +47,17 @@
         <div class="col-xs-12"><p class="item-style1">QUIZ</p></div>
         <div class="col-xs-12">
           <ol>
-            <% @exhibit.questions.each do |question| %>
-              <li><%= question.content %></li>
+            <% for question in @exhibit.questions %>
+              <li>
+                <%= question.content %>
+                <ul>
+                  <% for answer in question.answers %>
+                    <li>
+                      <%= answer.content %>
+                    </li>
+                  <% end %>
+                </ul>
+              </li>
             <% end %>
           </ol>
         </div>

@@ -44,12 +44,7 @@
       <h3>PYTANIA:</h3>
 
       <%=  f.fields_for :questions do |buldier| %>
-         <div class="form-group">
-          <%= buldier.label :content, "Pytanie" %></br> 
-          <%= buldier.text_area :content, :rows => 2 %></br>  
-          <%= buldier.check_box :_destroy %>
-          <%= buldier.label :_destroy, "Usuń Pytanie" %>
-         </div>
+         <%= render 'question_fields', :f => buldier %>
       <% end %>
 
       </br>
