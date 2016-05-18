@@ -24,7 +24,6 @@ class ExhibitsController < ApplicationController
   # POST /exhibits
   def create
     @exhibit = Exhibit.new(exhibit_params)
-    @types = Type.all
 
     respond_to do |format|
       if @exhibit.save
