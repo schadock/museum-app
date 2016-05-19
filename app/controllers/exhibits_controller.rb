@@ -3,13 +3,14 @@ class ExhibitsController < ApplicationController
 
   # GET /exhibits
   def index
+    @types = Type.all
     @exhibits = Exhibit.search(params[:keyword]).collection(params[:collection])
     @exhibits = @exhibits.collection(params[:collection]) if params[:collection].present?
   end
 
   # GET /exhibits/1
   def show
-
+    @types = Type.all
   end
 
   # GET /exhibits/new
