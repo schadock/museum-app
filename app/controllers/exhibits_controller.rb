@@ -3,7 +3,8 @@ class ExhibitsController < ApplicationController
 
   # GET /exhibits
   def index
-    @exhibits = Exhibit.search(params[:keyword]).collection(params[:filter])
+    @exhibits = Exhibit.search(params[:keyword]).collection(params[:collection])
+    @exhibits = @exhibits.collection(params[:collection]) if params[:collection].present?
   end
 
   # GET /exhibits/1
