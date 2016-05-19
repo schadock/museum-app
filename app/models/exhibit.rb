@@ -1,7 +1,8 @@
 class Exhibit < ActiveRecord::Base
   belongs_to :user
   belongs_to :type
-  has_many :questions, dependent: :destroy
+  has_many :questions, :dependent=> :destroy
+  has_many :cords, :dependent=> :destroy
   accepts_nested_attributes_for :questions, 
                                 :reject_if => lambda { |a| a[:content].blank? }, 
                                 :allow_destroy => true

@@ -1,59 +1,12 @@
 <div class="container-fluid" style="margin-top: 100px;">
   <div class="row center">
-  
-  <div class="mapa">
-    <%= image_tag 'mapa.png', :id=>'map', :usemap=>'image-maps-2016-05-15-152644' %>  
-    <map name="image-maps-2016-05-15-152644" id="ImageMapsCom-image-maps-2016-05-15-152644">
-    <% @cords.each do |cord| %>
-      <area  alt="" title="1" href="<%= exhibit_path(cord.exhibit_id) %>" shape="rect" coords="<%= cord.cord%>" style="outline:none;" target="_self"     />
-    <% end %>
-   </map>
-  </div>
-  <div class="mapa">
-    <%= image_tag 'mapa.png', :id=>'map', :usemap=>'image-maps-2016-05-15-152644' %>  
-          <map name="image-maps-2016-05-15-152644" id="ImageMapsCom-image-maps-2016-05-15-152644">
-          <area  alt="" title="1" href="#1" shape="rect" coords="602,128,650,187" style="outline:none;" target="_self"     />
-          <area  alt="" title="2" href="#2" shape="rect" coords="576,191,624,250" style="outline:none;" target="_self"     />
-          <area  alt="" title="3" href="#3" shape="rect" coords="584,273,630,323" style="outline:none;" target="_self"     />
-          <area  alt="" title="4" href="#4" shape="rect" coords="626,247,656,299" style="outline:none;" target="_self"     />
-          <area  alt="" title="5" href="#5" shape="rect" coords="545,322,603,374" style="outline:none;" target="_self"     />
-          <area  alt="" title="6" href="#6" shape="rect" coords="609,344,656,396" style="outline:none;" target="_self"     />
-          <area  alt="" title="7" href="#7" shape="rect" coords="660,285,727,341" style="outline:none;" target="_self"     />
-          <area  alt="" title="8" href="#8" shape="rect" coords="766,291,833,347" style="outline:none;" target="_self"     />
-          <area  alt="" title="9" href="#9" shape="rect" coords="617,393,672,438" style="outline:none;" target="_self"     />
-          <area  alt="" title="10" href="#10" shape="rect" coords="747,372,833,445" style="outline:none;" target="_self"     />
-          <area  alt="" title="11" href="#11" shape="rect" coords="612,499,698,572" style="outline:none;" target="_self"     />
-          <area  alt="" title="12" href="#12" shape="rect" coords="751,509,837,569" style="outline:none;" target="_self"     />
-          <area  alt="" title="13" href="#13" shape="rect" coords="754,580,840,640" style="outline:none;" target="_self"     />
-          <area  alt="" title="14" href="#14" shape="rect" coords="662,597,726,668" style="outline:none;" target="_self"     />
-          <area  alt="" title="15" href="#15" shape="rect" coords="550,556,614,627" style="outline:none;" target="_self"     />
-          <area  alt="" title="16" href="#16" shape="rect" coords="595,633,659,704" style="outline:none;" target="_self"     />
-          <area  alt="" title="17" href="#17" shape="rect" coords="527,625,576,682" style="outline:none;" target="_self"     />
-          <area  alt="" title="18" href="#18" shape="rect" coords="477,653,529,728" style="outline:none;" target="_self"     />
-          <area  alt="" title="19" href="#19" shape="rect" coords="580,732,657,807" style="outline:none;" target="_self"     />
-          <area  alt="" title="22" href="#22" shape="rect" coords="228,736,305,811" style="outline:none;" target="_self"     />
-          <area  alt="" title="20" href="#20" shape="rect" coords="370,648,430,713" style="outline:none;" target="_self"     />
-          <area  alt="" title="21" href="#21" shape="rect" coords="332,633,371,695" style="outline:none;" target="_self"     />
-          <area  alt="" title="23" href="#23" shape="rect" coords="294,578,341,641" style="outline:none;" target="_self"     />
-          <area  alt="" title="26" href="#26" shape="rect" coords="239,634,301,697" style="outline:none;" target="_self"     />
-          <area  alt="" title="27" href="#27" shape="rect" coords="169,598,231,661" style="outline:none;" target="_self"     />
-          <area  alt="" title="24" href="#24" shape="rect" coords="256,545,295,608" style="outline:none;" target="_self"     />
-          <area  alt="" title="25" href="#25" shape="rect" coords="207,513,273,547" style="outline:none;" target="_self"     />
-          <area  alt="" title="28" href="#28" shape="rect" coords="48,593,139,655" style="outline:none;" target="_self"     />
-          <area  alt="" title="29" href="#29" shape="rect" coords="53,523,144,585" style="outline:none;" target="_self"     />
-          <area  alt="" title="30" href="#30" shape="rect" coords="45,367,136,429" style="outline:none;" target="_self"     />
-          <area  alt="" title="33" href="#33" shape="rect" coords="181,398,272,432" style="outline:none;" target="_self"     />
-          <area  alt="" title="34" href="#34" shape="rect" coords="229,353,293,395" style="outline:none;" target="_self"     />
-          <area  alt="" title="35" href="#35" shape="rect" coords="286,321,350,363" style="outline:none;" target="_self"     />
-          <area  alt="" title="31" href="#31" shape="rect" coords="46,281,134,344" style="outline:none;" target="_self"     />
-          <area  alt="" title="32" href="#32" shape="rect" coords="159,276,219,348" style="outline:none;" target="_self"     />
-          <area  alt="" title="36" href="#36" shape="rect" coords="224,245,293,317" style="outline:none;" target="_self"     />
-          <area  alt="" title="37" href="#37" shape="rect" coords="262,199,347,243" style="outline:none;" target="_self"     />
-          <area  alt="" title="38" href="#38" shape="rect" coords="230,112,287,191" style="outline:none;" target="_self"     />
-          <area  alt="" title="39" href="#39" shape="rect" coords="290,98,347,177" style="outline:none;" target="_self"     />
-          <area  alt="" title="40" href="#40" shape="rect" coords="349,368,416,422" style="outline:none;" target="_self"     />
-          <area  alt="" title="41" href="#41" shape="rect" coords="478,368,545,422" style="outline:none;" target="_self"     />
-          </map>
-    </div>  
+    <div class="mapa">
+      <%= image_tag 'mapa.png', :id=>'map', :usemap=>'image-maps-2016-05-15-152644' %>  
+      <map name="image-maps-2016-05-15-152644" id="ImageMapsCom-image-maps-2016-05-15-152644">
+      <% @cords.each do |cord| %>
+        <area  alt="" title="1" href="<%= exhibit_path(cord.exhibit_id) %>" shape="rect" coords="<%= cord.cord%>" style="outline:none;" target="_self"     />
+      <% end %>
+     </map>
+    </div>
   </div>
 </div>  

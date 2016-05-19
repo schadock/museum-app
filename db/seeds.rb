@@ -450,8 +450,6 @@ Cord.create(
     exhibit_id: e36.id,
     cord: "224,245,293,317")
 
-
-
 e37 = Exhibit.create(
     title: 'Śpiący Satyr', 
     author:  '',

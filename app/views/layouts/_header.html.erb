@@ -25,6 +25,16 @@
             <li class="main-menu-st">
               <i class="fa-li fa fa-eye"></i></i><%= link_to "Eksponaty", exhibits_path, :class=> "main-menu-item" %>
             </li>
+            <% unless user_signed_in? %>
+
+              <% else %>
+              <li class="main-menu-st">
+                <%= link_to "Dodaj Eksponat", new_exhibit_path, :class=>"main-menu-item"%>
+              </li>
+              <li class="main-menu-st">
+                <%= link_to "Wyloguj się", destroy_user_session_path, method: :delete, :class=>"main-menu-item"%>
+              </li>
+            <% end%>
           </ul>
         ' title="MENU">
         <i class="fa fa-bars fa-2x" style="color: #fff;"></i>
