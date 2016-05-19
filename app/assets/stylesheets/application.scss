@@ -51,6 +51,13 @@ body{
 
 }
 
+.tw{
+	color:white;
+	li{
+		list-style-type: circle;
+	}
+}
+
 .padd{
 	padding-left: 10%;
 	@media (max-width: 767px) {

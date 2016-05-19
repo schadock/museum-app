@@ -10,10 +10,10 @@
               <i class="fa-li fa fa-map-marker"></i><%= link_to "Mapa", static_pages_map_path, :class=> "main-menu-item" %>
             </li>
             <li class="main-menu-st">
-              <i class="fa-li fa fa-compass"></i><span class="main-menu-item">"Wycieczki"</span>
-              <% @types.limit(3).each do |type| %>
+              <i class="fa-li fa fa-compass"></i><span class="main-menu-item">Wycieczki</span>
+              <% @types.each do |type| %>
                 <li>
-                  <%= link_to type.name, exhibits_path(collection: type.name), :class=> 'menu-item' %>
+                  <%= link_to type.name, exhibits_path(collection: type.name), :class=> 'menu-item tw' %>
                 </li>
               <% end %>
             </li>
