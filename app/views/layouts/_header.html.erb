@@ -11,11 +11,16 @@
             </li>
             <li class="main-menu-st">
               <i class="fa-li fa fa-compass"></i><span class="main-menu-item">Wycieczki</span>
-              <% @types.each do |type| %>
+              
                 <li>
-                  <%= link_to type.name, exhibits_path(collection: type.name), :class=> 'menu-item tw' %>
+                  <a href="https://mysterious-anchorage-61399.herokuapp.com/exhibits?collection=Mitologia">Mitologia</a>
                 </li>
-              <% end %>
+                <li>
+                  <a href="https://mysterious-anchorage-61399.herokuapp.com/exhibits?collection=Sportowcy">Sportowcy</a>
+                  </li>
+                  <li>
+                  <a href="https://mysterious-anchorage-61399.herokuapp.com/exhibits?collection=Postacie+historyczne">Postacie historyczne</a
+                  </li>
             </li>
             <li class="main-menu-st">
               <i class="fa-li fa fa-eye"></i></i><%= link_to "Eksponaty", exhibits_path, :class=> "main-menu-item" %>
