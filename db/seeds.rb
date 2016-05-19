@@ -31,7 +31,7 @@ Cord.create(
     cord: "576,191,624,250")
 
 
-Exhibit.create(
+e3 = Exhibit.create(
     title: 'Lekyt nagrobny', 
     author:  'nieznany twórca attycki', 
     date_of_origin: 'po 316 r. p.n.e.', 
@@ -43,7 +43,7 @@ Cord.create(
     cord: "584,273,630,323")
 
 
-Exhibit.create(
+e4 = Exhibit.create(
     title: 'Głowa Meduzy (tzw. Meduza Rondanini)', 
     author:  'autor nieznany', 
     date_of_origin: 'koniec V w. p.n.e.', 
@@ -55,7 +55,7 @@ Cord.create(
     exhibit_id: e4.id,
     cord: "626,247,656,299")
 
-Exhibit.create(
+e5 = Exhibit.create(
     title: 'tzw. Narcyz (młodzieniec wsparty na kolumnie)', 
     author:  'naśladowca Polikleta', 
     date_of_origin: 'ok. 400 r. w. p.n.e.', 
@@ -67,7 +67,7 @@ Cord.create(
     cord: "545,322,603,374")
 
 
-Exhibit.create(
+e6 = Exhibit.create(
     title: 'Perykles', 
     author:  'Kresilas z Aten',
     date_of_origin: 'ok. 440-430 r. p.n.e.', 
@@ -79,7 +79,7 @@ Cord.create(
     cord: "609,344,656,396")
 
 
-Exhibit.create(
+e7 = Exhibit.create(
     title: 'Atena i Marsjasz',
     author:  'Myron z Eleuterai',
     date_of_origin: 'ok. 457–447 r. p.n.e.',
@@ -92,7 +92,7 @@ Cord.create(
     cord: "660,285,727,341")
 
 
-Exhibit.create(
+e8 = Exhibit.create(
   title: 'Dyskobol', 
   author:  'Myron z Eleuterai', 
   date_of_origin: 'ok. 460–450 r. p.n.e.', 
@@ -106,7 +106,7 @@ Cord.create(
     cord: "766,291,833,347")
 
 
-Exhibit.create(
+e9 = Exhibit.create(
     title: 'przedstawienie Bogini tzw. Aspazja', 
     author:  'Kalamis',
     date_of_origin: 'ok. 465 p.n.e.', 
@@ -118,7 +118,7 @@ Cord.create(
     cord: "617,393,672,438")
 
 
-Exhibit.create(
+e10 = Exhibit.create(
     title: 'Dionizos', 
     author:  'Alkamenes',
     date_of_origin: 'ok. 430 r. p.n.e.', 
@@ -131,7 +131,7 @@ Cord.create(
 
 
 
-Exhibit.create(
+e11 = Exhibit.create(
     title: 'Doryforos- Herma portretowa', 
     author:  'Poliklet z Argot',
     date_of_origin: 'ok. 450 440 p.n.e.', 
@@ -143,7 +143,7 @@ Cord.create(
     cord: "612,499,698,572")
 
 
-Exhibit.create(
+e12 = Exhibit.create(
     title: 'Doryforos (Niosący włócznię)', 
     author:  'Poliklet z Argos', 
     date_of_origin: 'ok. 450–440 p.n.e.', 
@@ -155,7 +155,7 @@ Cord.create(
     exhibit_id: e12.id,
     cord: "751,509,837,569")
 
-Exhibit.create(
+e13 = Exhibit.create(
     title: 'Młodzieniec, tzw. KYNISKOS', 
     author:  'naśladowca Polikleta', 
     date_of_origin: 'koniec V w. p.n.e.', 
@@ -168,7 +168,7 @@ Cord.create(
     cord: "754,580,840,640")
 
 
-Exhibit.create(
+e14 = Exhibit.create(
     title: 'Ranna Amazonka (tzw. Amazonka Sosiklesa)',
     author:  'Poliklet lub Fidiasz',
     date_of_origin: 'ok. 440 p.n.e.',
@@ -181,7 +181,7 @@ Cord.create(
     cord: "662,597,726,668")
 
 
-Exhibit.create(
+e15 = Exhibit.create(
     title: 'Herakles Epitrapezios ', 
     author:  'Lizyp z Sykionu',
     date_of_origin: '332 r. p.n.e.', 
@@ -192,7 +192,7 @@ Cord.create(
     exhibit_id: e15.id,
     cord: "550,556,614,627")
 
-Exhibit.create(
+e16 = Exhibit.create(
     title: 'Apollo Kitarodos (grający na kitarze – antycznym instrumencie)',
     author:  'Poliklet z Argos',
     date_of_origin: 'ok. 460 r. p.n.e.',
@@ -206,7 +206,7 @@ Cord.create(
     cord: "595,633,659,704")
 
 
-Exhibit.create(
+e17 = Exhibit.create(
     title: 'Sokrates', 
     author:  'Silanion (?)',
     date_of_origin: 'połowa IV w. p.n.e.', 
@@ -218,7 +218,7 @@ Cord.create(
     cord: "527,625,576,682")
 
 
-Exhibit.create(
+e18 = Exhibit.create(
     title: 'Eurypides', 
     author:  'Lizyp z Sykionu',
     date_of_origin: 'ok. 330 r. p.n.e', 
@@ -229,7 +229,7 @@ Cord.create(
     exhibit_id: e18.id,
     cord: "477,653,529,728")
 
-Exhibit.create(
+e19 = Exhibit.create(
     title: 'Atena Lemina', 
     author:  'Fidiasz', 
     date_of_origin: 'ok. 450 p.n.e.', 
@@ -243,7 +243,7 @@ Cord.create(
     cord: "580,732,657,807")
 
 
-Exhibit.create(
+e20 = Exhibit.create(
     title: 'Homer', 
     author:  '',
     date_of_origin: 'I lub I w. p.n.e.', 
@@ -255,7 +255,7 @@ Cord.create(
     cord: "370,648,430,713")
 
 
-Exhibit.create(
+e21 = Exhibit.create(
     title: 'Aleksander Wielki', 
     author:  'Leochares (?)',
     date_of_origin: 'ok. 330-320 p.n.e. ', 
@@ -267,7 +267,7 @@ Cord.create(
     cord: "332,633,371,695")
 
 
-Exhibit.create(
+e22 = Exhibit.create(
     title: 'Afrodyta Knidyjska', 
     author:  'Praksyteles z Aten', 
     date_of_origin: '364–361 p.n.e.', 
@@ -282,7 +282,7 @@ Cord.create(
     cord: "228,736,305,811")
 
 
-Exhibit.create(
+e23 = Exhibit.create(
     title: 'Chłopiec wyciągający cierń ze stopy tzw. Spinario', 
     author:  'Pazyteles',
     date_of_origin: '80-50 p.n.e.', 
@@ -294,7 +294,7 @@ Cord.create(
     cord: "294,578,341,641")
 
 
-Exhibit.create(
+e24 = Exhibit.create(
     title: 'Młodzieniec tzw. Antinous', 
     author:  '',
     date_of_origin: 'ok 50 p.n.e.', 
@@ -307,7 +307,7 @@ Cord.create(
 
 
 
-Exhibit.create(
+e25 = Exhibit.create(
     title: 'Herkulanka', 
     author:  '',
     date_of_origin: 'I w. p.n.e.', 
@@ -318,7 +318,7 @@ Cord.create(
     exhibit_id: e25.id,
     cord: "207,513,273,547")
 
-Exhibit.create(
+e26 = Exhibit.create(
     title: 'Artemida Brauronia tzw. Gabii', 
     author:  'Praksyteles',
     date_of_origin: 'ok. 350 r. p.n.e.', 
@@ -329,7 +329,7 @@ Cord.create(
     exhibit_id: e26.id,
     cord: "239,634,301,697")
 
-Exhibit.create(
+e27 = Exhibit.create(
     title: 'Wiążący sandał tzw. Jazon', 
     author:  'Lizyp lub jego naśladowca',
     date_of_origin: 'ok. 320 r. p.n.e.', 
@@ -340,7 +340,7 @@ Cord.create(
     exhibit_id: e27.id,
     cord: "169,598,231,661")
 
-Exhibit.create(
+e28 = Exhibit.create(
     title: 'APOLLO, tzw. Belwederski', 
     author:  'Leochares', 
     date_of_origin: 'ok. 330 r. p.n.e.', 
@@ -353,7 +353,7 @@ Cord.create(
     cord: "48,593,139,655")
 
 
-Exhibit.create(
+e29 = Exhibit.create(
     title: 'Apoksjomenos', 
     author:  'Lizyp z Sykionu', 
     date_of_origin: 'ok. 330–320 p.n.e.', 
@@ -368,7 +368,7 @@ Cord.create(
     cord: "53,523,144,585")
 
 
-Exhibit.create(
+e30 = Exhibit.create(
     title: 'Demostenes', 
     author:  'Polieuktos', 
     date_of_origin: 'ok. 280–279 r. p.n.e.', 
@@ -380,7 +380,7 @@ Cord.create(
     cord: "45,367,136,429")
 
 
-Exhibit.create(
+e31 = Exhibit.create(
     title: 'Diadoch', 
     author:  'autor nieznany', 
     date_of_origin: 'II w. p.n.e.', 
@@ -392,7 +392,7 @@ Cord.create(
     cord: "46,281,134,344")
 
 
-Exhibit.create(
+e32 = Exhibit.create(
     title: 'Odpoczywający Hermes', 
     author:  'Lizyp lub jego naśladowca',
     date_of_origin: 'ok. 320 r. p.n.e.', 
@@ -404,7 +404,7 @@ Cord.create(
     cord: "159,276,219,348")
 
 
-Exhibit.create(
+e33 =Exhibit.create(
     title: 'Lucius Caecilius Jucundus', 
     author:  '',
     date_of_origin: 'I w. p.n.e.', 
@@ -416,7 +416,7 @@ Cord.create(
     cord: "181,398,272,432")
 
 
-Exhibit.create(
+e34 = Exhibit.create(
     title: 'Norbanus Soreks', 
     author:  '',
     date_of_origin: 'I w. p.n.e.', 
@@ -428,7 +428,7 @@ Cord.create(
     cord: "229,353,293,395")
 
 
-Exhibit.create(
+e35 = Exhibit.create(
     title: 'Chłopiec z Gęsią', 
     author:  'Boetos z Chalcedonu',
     date_of_origin: 'ok. 220-160 r. p.n.e.', 
@@ -439,7 +439,7 @@ Cord.create(
     exhibit_id: e35.id,
     cord: "286,321,350,363")
 
-Exhibit.create(
+e36 = Exhibit.create(
     title: 'fragment malowidła ściennego z tzw. Gabinetów pompejańskich z pierwotnego wystroju muzeum', 
     author:  '',
     date_of_origin: 'I w. p.n.e.', 
@@ -452,7 +452,7 @@ Cord.create(
 
 
 
-Exhibit.create(
+e37 = Exhibit.create(
     title: 'Śpiący Satyr', 
     author:  '',
     date_of_origin: 'ok. 220 r. p.n.e.', 
@@ -463,7 +463,7 @@ Cord.create(
     exhibit_id: e37.id,
     cord: "262,199,347,243")
 
-Exhibit.create(
+e38 = Exhibit.create(
     title: 'Orfeusz i Eurydyka prowadzeni przez Hermesa', 
     author:  'krąg Alkamenesa', 
     date_of_origin: '448–403 p.n.e.', 
@@ -475,7 +475,7 @@ Cord.create(
     exhibit_id: e38.id,
     cord: "230,112,287,191")
 
-Exhibit.create(
+e39 = Exhibit.create(
     title: 'Pijany Satyr', 
     author:  '',
     date_of_origin: 'III w. p.n.e.', 
@@ -487,7 +487,7 @@ Cord.create(
     cord: "290,98,347,177")
 
 
-Exhibit.create(
+e40 = Exhibit.create(
     title: 'Zapaśnicy', 
     author:  '',
     date_of_origin: 'koniec IV w. p.n.e.', 
@@ -498,7 +498,7 @@ Cord.create(
     exhibit_id: e40.id,
     cord: "349,368,416,422")
 
-Exhibit.create(
+e41 = Exhibit.create(
     title: 'Amfora Rzymska z II wieku ', 
     author:  '',
     date_of_origin: 'II w.', 
