@@ -6,7 +6,7 @@ sportowcy = Type.create!(name: 'Sportowcy')
 postacie_historyczne = Type.create!(name: 'Postacie historyczne')
 brak = Type.create!(name: 'brak')
 
-Exhibit.create(
+e1 = Exhibit.create(
     title: 'Stela Hegos', 
     author:  'krąg Agorakritosa',
     date_of_origin: 'ok. 430-450 p.n.e.', 
@@ -14,7 +14,11 @@ Exhibit.create(
     ex_id: '1',
     type: brak)
 
-Exhibit.create(
+Cord.create(
+    exhibit_id: e1.id,
+    cord: "602,128,650,187")
+
+e2 = Exhibit.create(
   title: 'Woźnica Diomedesa (tzw. Auriga)', 
   author:  'Pitagoras z Region', 
   date_of_origin: 'ok. 475 r. p.n.e.', 
@@ -22,7 +26,9 @@ Exhibit.create(
   Pomnik został zniszczony w wyniku osunięcia się skał w 372 r p.n.e. Resztki monumentu odnaleziono dopiero w 1896 r., zatem w czasach powstawania szczecińskiej kolekcji Auriga był jednym z najnowszych i najciekawszych odkryć.',  
   ex_id: '2', 
   type: sportowcy)
-
+Cord.create(
+    exhibit_id: e2.id,
+    cord: "576,191,624,250")
 
 
 Exhibit.create(

@@ -3,6 +3,14 @@
   
   <div class="mapa">
     <%= image_tag 'mapa.png', :id=>'map', :usemap=>'image-maps-2016-05-15-152644' %>  
+    <map name="image-maps-2016-05-15-152644" id="ImageMapsCom-image-maps-2016-05-15-152644">
+    <% @cords.each do |cord| %>
+      <area  alt="" title="1" href="<%= exhibit_path(cord.exhibit_id) %>" shape="rect" coords="<%= cord.cord%>" style="outline:none;" target="_self"     />
+    <% end %>
+   </map>
+  </div>
+  <div class="mapa">
+    <%= image_tag 'mapa.png', :id=>'map', :usemap=>'image-maps-2016-05-15-152644' %>  
           <map name="image-maps-2016-05-15-152644" id="ImageMapsCom-image-maps-2016-05-15-152644">
           <area  alt="" title="1" href="#1" shape="rect" coords="602,128,650,187" style="outline:none;" target="_self"     />
           <area  alt="" title="2" href="#2" shape="rect" coords="576,191,624,250" style="outline:none;" target="_self"     />

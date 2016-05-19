@@ -4,6 +4,8 @@ class StaticPagesController < ApplicationController
   end
 
   def map
+    @exhibits = Exhibit.all
+    @cords = Cord.all
     @types = Type.all
   end
 
