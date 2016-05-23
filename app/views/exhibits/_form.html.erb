@@ -46,6 +46,7 @@
       <%=  f.fields_for :questions do |buldier| %>
          <%= render 'question_fields', :f => buldier %>
       <% end %>
+      <%= link_to_add_fields "Dodaj Pytanie", f, :questions %>
 
       </br>
       <div class="actions">

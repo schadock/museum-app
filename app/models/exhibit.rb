@@ -1,4 +1,6 @@
 class Exhibit < ActiveRecord::Base
+  #attr_accessible :title, :questions_attributes
+  #attr_accessor :questions
   belongs_to :user
   belongs_to :type
   has_many :questions, :dependent=> :destroy

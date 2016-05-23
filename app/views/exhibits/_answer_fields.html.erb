@@ -1,6 +1,6 @@
 <fieldset>
   <%= f.label :content, "Odpowiedz" %>
   <%= f.text_field :content %>
-  <%= f.check_box :_destroy %>
-  <%= f.label :_destroy, "Usuń" %>
+  <%= f.hidden_field :_destroy %>
+  <%= link_to "Usuń", '#', class: "remove_fields" %>
 </fieldset>
