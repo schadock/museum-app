@@ -5,3 +5,4 @@ class Question < ActiveRecord::Base
                                 :reject_if => lambda { |a| a[:content].blank? }, 
                                 :allow_destroy => true
 end
+ 
