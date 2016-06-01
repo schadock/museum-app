@@ -3,8 +3,8 @@
     <h1>Kolekcje</h1>
     <ul class="eksp-list">
       <% @types.each do |type| %>
-        <li>
-          <%= link_to type.name, exhibits_path(collection: type.name), :class=> "#{type.photo}" %>
+        <li class= "<%= type.photo %>" >
+          <%= link_to type.name, exhibits_path(collection: type.name)%>
         </li>     
       <% end %>
     </ul>
