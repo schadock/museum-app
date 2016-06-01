@@ -28,9 +28,13 @@
         <label>Opis: </label>
         <%= f.text_field :description, :rows => 3, :class=>"form-control text" %>
       </div>
-      <div class="text-center"> 
-        <label>Zdjęcie: </label>
-        <%= f.file_field :avatar, :class=>"file", :id=> "file" %>
+      <div class="form-group"> 
+        <label>Zdjęcie Profilowe: </label>
+        <%= f.text_field :big_photo, :class=>"form-control" %>
+      </div>
+      <div class="form-group"> 
+        <label>Miniaturka: </label>
+        <%= f.text_field :thumb_photo, :class=>"form-control" %>
       </div>
       <div class="form-group">
         <label>Typ eksponatu: </label>

@@ -77,6 +77,8 @@ class ExhibitsController < ApplicationController
                                       :ex_id,
                                       :keywords,
                                       :avatar, 
+                                      :big_photo,
+                                      :thumb_photo,
                                       questions_attributes: [ :id ,:exhibit_id, :content, :_destroy,
                                                               answers_attributes: [:id, :question_id, :content, :_destroy]])
     end

@@ -1,12 +1,12 @@
 <div class="container-fluid" style="margin-top: 100px;">
   <div class="row">
     <h1>Kolekcje</h1>
-    <ul>
-    <% @types.each do |type| %>
-      <li>
-        <%= link_to type.name, exhibits_path(collection: type.name), :class=> 'label label-primary' %>
-      </li>
-    <% end %>
+    <ul class="eksp-list">
+      <% @types.each do |type| %>
+        <li>
+          <%= link_to type.name, exhibits_path(collection: type.name), :class=> "#{type.photo}" %>
+        </li>     
+      <% end %>
     </ul>
   </div>
 </div>  

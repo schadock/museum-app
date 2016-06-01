@@ -1,10 +1,10 @@
 Exhibit.destroy_all
 Type.destroy_all
 
-mitologia = Type.create!(name: 'Mitologia')
-sportowcy = Type.create!(name: 'Sportowcy')
-postacie_historyczne = Type.create!(name: 'Postacie historyczne')
-brak = Type.create!(name: 'brak')
+mitologia = Type.create!(name: 'Mitologia', photo: 'eksp-list-item1')
+sportowcy = Type.create!(name: 'Sportowcy', photo: 'eksp-list-item2')
+postacie_historyczne = Type.create!(name: 'Postacie historyczne', photo: 'eksp-list-item3')
+
 
 e1 = Exhibit.create(
     title: 'Stela Hegos', 
@@ -12,7 +12,7 @@ e1 = Exhibit.create(
     date_of_origin: 'ok. 430-450 p.n.e.', 
     description: 'Stela (pionowo ustawiona płyta z dekoracją rzeźbiarską) była jednym z powszechniej stosowanych w antycznej Grecji typów nagrobków. Płaskorzeźby ukazywały zwykle zmarłego, niekiedy w scenie pożegnania zmarłego z najbliższymi, symbolizującej pożegnanie z życiem. Tak jest też w przypadku steli nagrobnej Hegeso — młodej kobiety, przedstawionej ze służącą, podającą jej szkatułkę, zapewne z biżuterią. Stelę Hegeso wiąże się zwykle z kręgiem Agorakritosa z wyspy Paros, najlepszego ucznia Fidiasza, któremu mistrz pozwalał nawet podpisywać się obok siebie na wykonanych wspólnie dziełach. Wprawdzie autorstwo steli Hegeso nie zostało dotąd jednoznacznie ustalone, jednak doskonałość rzeźby pozwala sądzić, że może to być dzieło tego znakomitego artysty.', 
     ex_id: '1',
-    type: brak)
+    type: nil)
 
 Cord.create(
     exhibit_id: e1.id,
@@ -137,7 +137,7 @@ e11 = Exhibit.create(
     date_of_origin: 'ok. 450 440 p.n.e.', 
     description: 'Popiersie (herma) jest fragmentem posągu słynnego Doryforosa, eksponowanego na naszej wystawie. Dzieło Polikleta było w starożytności wielokrotnie kopiowane. Herma, która posłużyła za wzór dla szczecińskiej rzeźby, wykonana w drugiej połowie I w, p n,e, przez greckiego twórcę Apoloniosa, znaleziona została w willi rodziny Pizonów w Herkulanum, antycznym mieście zasypanym wraz z Pompejami przez popioły Wezuwiusza.', 
     ex_id: '11',
-    type: brak)
+    type: nil)
 Cord.create(
     exhibit_id: e11.id,
     cord: "612,499,698,572")
@@ -162,7 +162,7 @@ e13 = Exhibit.create(
     description: 'W czasach powstawania szczecińskiej kolekcji posąg ten – znany z marmurowej kopii z ok. 150 r. p.n.e. – uchodził za dzieło samego Polikleta. Utożsamiano go ze statuą Kyniskosa, zwycięzcy w olimpijskich zawodach bokserskich z 464–460 r. p.n.e. Przy tworzeniu szczecińskiej rzeźby, kierując się tą hipotezą, dokonano swobodnej rekonstrukcji prawej ręki. Obecnie uważa się, że rzeźba ta nie jest dziełem samego mistrza, lecz jednego z jego uczniów (nie przedstawia zatem Kyniskosa) i stanowi świadectwo wielkiego wpływu, jaki Poliklet wywarł na rzeźbę grecką. 
     Zwyczajowa nazwa pochodzi od miejsca nazwiska rodziny, w której posiadaniu posąg znajdował się przez wiele lat. Posąg znany jest z marmurowej kopii z ok. 150 r. p.n.e.',  
     ex_id: '13',
-    type: brak)
+    type: nil)
 Cord.create(
     exhibit_id: e13.id,
     cord: "754,580,840,640")
@@ -288,7 +288,7 @@ e23 = Exhibit.create(
     date_of_origin: '80-50 p.n.e.', 
     description: 'Posąg powstał trzysta lat po czasach Polikleta, utrzymany był jednak w duchu jego rzeźb, toteż gdy tworzono szczecińską kolekcję przypisywany był powszechnie temu mistrzowi. Twórcą dzieła był zapewne osiadły w Rzymie Grek Pazyteles, jeden z najsłynniejszych rzeźbiarzy I w. p.n.e., ceniony m.in, przez Cycerona. Wykonana z brązu rzeźba znaleziona został w Rzymie na początku renesansu i cieszyła się wielką popularnością jako rzadki przykład oryginału greckiego brązu. ', 
     ex_id: '23',
-    type: brak)
+    type: nil)
 Cord.create(
     exhibit_id: e23.id,
     cord: "294,578,341,641")
@@ -300,7 +300,7 @@ e24 = Exhibit.create(
     date_of_origin: 'ok 50 p.n.e.', 
     description: 'Rzeźba, znaleziona w ruinach zasypanego przez popioły Wezuwiusza miasteczka Herkulanum, uważana była za portret Antinousa —młodzieńca uchodzącego w cesarskim Rzymie za ideał męskiego piękna, ulubieńca cesarza Hadriana (76-138 n.e.) Dzieło to powstało jednak o dwa stulecia wcześniej, nie może więc przedstawiać Antinousa. Odwołująca się do dzieł Polikleta rzeźba była zapewne wizerunkiem młodzieńczego bóstwa lub herosa. Jej autorem był prawdopodobnie grecki rzeźbiarz, działający - podobnie jak wielu jego rodaków — w rzymskiej Italii. ',  
     ex_id: '24',
-    type: brak)
+    type: nil)
 Cord.create(
     exhibit_id: e24.id,
     cord: "256,545,295,608")
@@ -313,7 +313,7 @@ e25 = Exhibit.create(
     date_of_origin: 'I w. p.n.e.', 
     description: 'Rzeźba z brązu, znaleziona w ruinach zasypanego przez popioły Wezuwiusza miasteczka Herkulanum, została wykonana zapewne jako kopia podówczas słynnego, a dziś nieznanego posągu.',  
     ex_id: '25',
-    type: brak)
+    type: nil)
 Cord.create(
     exhibit_id: e25.id,
     cord: "207,513,273,547")
@@ -345,7 +345,7 @@ e28 = Exhibit.create(
     author:  'Leochares', 
     date_of_origin: 'ok. 330 r. p.n.e.', 
     description: 'Twórca tego dzieła, pochodzący zapewne z Aten Leochares był w IV w. p.n.e., obok Praksytelesa, jednym z najsłynniejszych rzeźbiarzy greckich. Jego rzeźby zdobiły m.in. grobowiec władcy Halikarnasu w Azji Mniejszej, Mauzolosa, uznawany za jeden z siedmiu cudów świata. Posąg Apolla ustawiony był pierwotnie zapewne przy świątyni tego bóstwa na agorze (głównym placu) w Atenach. Leochares pokazał go w chwili, gdy właśnie zstąpił na ziemię i rusza do biegu. Apollo nie jest tu spokojnym i łagodnym opiekunem sztuki, lecz stanowczym i groźnym bóstwem, jakim często postrzegali go Grecy. Jeden z najbardziej znanych mitów o Apollu opowiada o zawodach muzycznych, do których wyzwał go satyr Marsjasz (pokazany na naszej wystawie z Ateną). Pokonawszy Marsjasza, Apollo kazał go obedrzeć ze skóry, chcąc w ten sposób ukarać go za zuchwałą chęć mierzenia się z bóstwem. 
-    Apollo Belwederski jest jedną z najbardziej znanych na świecie rzeźb antycznych. Znaleziony w XV w. we Włoszech, był podziwiany jako przykład doskonałości sztuki rzymskiej. Szczególnie cenił go Michał Anioł, który uzupełnił część brakujących elementów posągu (m.in. dłoń z łukiem).  W   początkach  XVI  w.  papież  Juliusz  II  (mecenas   Rafaela i Michała Anioła) ustawił rzeźbę w letnim pałacyku Belvedere na Watykanie; stąd wzięła się jej zwyczajowa nazwa.',  
+    Apollo Belwederski jest jedną z najbardziej znanych na świecie rzeźb antycznych. Znaleziony w XV w. we Włoszech, był podziwiany jako przykład doskonałości sztuki rzymskiej. Szczególnie cenił go Michał Anioł, który uzupełnił część nilujących elementów posągu (m.in. dłoń z łukiem).  W   początkach  XVI  w.  papież  Juliusz  II  (mecenas   Rafaela i Michała Anioła) ustawił rzeźbę w letnim pałacyku Belvedere na Watykanie; stąd wzięła się jej zwyczajowa nazwa.',  
     ex_id: '28',
     type: mitologia)
 Cord.create(
@@ -386,7 +386,7 @@ e31 = Exhibit.create(
     date_of_origin: 'II w. p.n.e.', 
     description: 'Wspaniały posąg nagiego mężczyzny, znaleziony w Rzymie, stanowi jedną z nierozwiązanych zagadek sztuki epoki hellenistycznej. Do niedawna sądzono, że jest to jeden z Diadochów – władców wywodzących się od wodzów Aleksandra Macedońskiego, rządzących państwami które powstały z jego imperium.',  
     ex_id: '31',
-    type: brak)
+    type: nil)
 Cord.create(
     exhibit_id: e31.id,
     cord: "46,281,134,344")
@@ -434,7 +434,7 @@ e35 = Exhibit.create(
     date_of_origin: 'ok. 220-160 r. p.n.e.', 
     description: 'Boetos jako pierwszy spośród artystów greckich podjął temat dziecka. Chłopiec z gęsią, wykonany zapewne jako wotum dla świątyni Ateny w Lindos na wyspie Rodos, należy do najbardziej znanych jego prac, kopiowanych często już w starożytności. Układ ciała obrazuje wysiłek chłopca, przydając kompozycji dynamiki i realizmu.',  
     ex_id: '35',
-    type: brak)
+    type: nil)
 Cord.create(
     exhibit_id: e35.id,
     cord: "286,321,350,363")
@@ -445,7 +445,7 @@ e36 = Exhibit.create(
     date_of_origin: 'I w. p.n.e.', 
     description: 'Pragnąć dać pełniejszy obraz sztuki antycznej, twórcy szczecińskiej kolekcji postanowili zaprezentować w muzeum także malarstwo grecko-rzymskie. Ze względu na zniszczenie większości dzieł ta dziedzina twórczości artystycznej antyku była i jest jednak najmniej znana. Wiadomości na temat sztuki malarskiej Greków i Rzymian dostarczają – obok źródeł literackich – nieliczne odsłonięte przez z archeologów malowidła ścienne i mozaiki. Największy ich zespół odnaleziono w Pompejach i ich okolicy. Ponieważ zdobycie oryginalnych malowideł było jeszcze bardziej nieosiągalne niż zakupienie rzeźb, twórcy szczecińskiej kolekcji i w tym przypadku postanowili posłużyć się kopią. W tym celu w ramach wystawy powstały tzw. Pokoje Pompejańskie, których ściany pokryto malowidłami wzorowanymi na antycznych oryginałach. Stanowiły one zarazem tło do eksponowania części kolekcji waz i drobnych rzeźb. W czasie późniejszych przebudów polichromie zostały w znacznej mierze zniszczone.',  
     ex_id: '36',
-    type: brak)
+    type: nil)
 Cord.create(
     exhibit_id: e36.id,
     cord: "224,245,293,317")
@@ -504,7 +504,7 @@ e41 = Exhibit.create(
     Jugosławia, sierpień 1969 r. przekazana załodze stoczni. styczeń 1970 rok. Amfora przekazana przez Stocznie Szczecińską Nową muzeum narodowemu w Szczecinie w ramach obchodów 60-lecia Stoczni Szczecińskiej 
     Szczecin 23 sierpnia 2008r.', 
     ex_id: '41',
-    type: brak)
+    type: nil)
 Cord.create(
     exhibit_id: e41.id,
     cord: "478,368,545,422")

@@ -24,6 +24,10 @@ body{
     background-color:#fff;
 }
 
+main{
+	margin:0 auto 45px auto;
+}
+
 .body-img{
 	background-image: url("/assets/bg.png");
 }
@@ -349,10 +353,6 @@ body{
 			    margin-left: 0;
 			}
 
-			main{
-					margin:0 auto 45px auto;
-			}
-
 			#footer {
 				position: fixed;
 				bottom:0px;
@@ -370,10 +370,6 @@ body{
 				color: black;
 			}
 
-			.footer-button{
-				margin-left: -15px;
-			}
-
 			@media (min-width: 750px) {
 				main{
 					width:70%;
@@ -383,3 +379,57 @@ body{
 					margin-left: 0px;
 				}
 			}
+
+			.eksp-list{	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.eksp-list > li{
+	height: 150px;
+	display: block;
+	padding-top: 55px;
+	text-align: center;	
+	background-position: 20% 30%;
+	background-size: cover;
+}
+
+.eksp-list > li:last-child{
+	padding-top: 35px;
+}
+
+.eksp-list-item1{
+	background-image: url("/assets/eksp-list-mitologia.png");
+}
+
+.eksp-list-item2{
+	background-image: url("/assets/eksp-list-sportowcy.png");
+}
+
+.eksp-list-item3{
+	background-image: url("/assets/eksp-list-postacie.png");
+}
+
+.eksp-list > li > a {
+	font-size: 30px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	text-shadow: 0px 5px 15px #000;
+}
+
+.eksp-list > li > a:hover {
+	text-decoration: none;
+}
+
+@media (min-width: 750px) {
+	main{
+		width:70%;
+	}
+
+	.eksp-list > li:last-child{
+		padding-top: 55px;
+	}
+}
