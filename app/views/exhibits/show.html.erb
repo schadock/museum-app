@@ -1,6 +1,6 @@
 <div class="site-m-row">
       <div class="subpanel">
-        <i class="fa fa-chevron-left"></i><%= link_to "Pokaż Wszystkie Eksponaty", exhibits_path, :class =>"subpanel-item" %>
+        <i class="fa fa-chevron-left"></i><%= link_to "Wróć", :back, :class =>"subpanel-item" %>
       </div>
    </div>
 <div class="container-fluid">
@@ -42,26 +42,27 @@
           </p>
         </div>
       </div> 
+      <% unless @exhibit.questions.blank? %>
       
-      <div class="row">
-        <div class="col-xs-12"><p class="item-style1">QUIZ</p></div>
-        <div class="col-xs-12">
-          <ol>
-            <% for question in @exhibit.questions %>
-              <li>
-                <%= question.content %>
-                <ul>
-                  <% for answer in question.answers %>
-                    <li>
-                      <%= answer.content %>
-                    </li>
-                  <% end %>
-                </ul>
-              </li>
-            <% end %>
-          </ol>
-        </div>
-
+        <div class="row">
+          <div class="col-xs-12"><p class="item-style1">QUIZ</p></div>
+          <div class="col-xs-12">
+            <ol>
+              <% for question in @exhibit.questions %>
+                <li>
+                  <%= question.content %>
+                  <ul>
+                    <% for answer in question.answers %>
+                      <li>
+                        <%= answer.content %>
+                      </li>
+                    <% end %>
+                  </ul>
+                </li>
+              <% end %>
+            </ol>
+          </div>
+      <% end %>      
       </div>
       <div id="footer">
         <div class="footer-button">

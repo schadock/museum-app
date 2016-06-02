@@ -1,8 +1,7 @@
 <div class="container-fluid" style="margin-top: 100px;">
   <div class="row center">
     <div class="mapa">
-      
-      <% @cords.each_with_index do |cord, index| %>
+      <% @cords.each do |cord| %>
         <a href="<%= exhibit_path(cord.exhibit_id) %>"><div id="<%= cord.cord %>"></div></a>
       <% end %>
      </map>

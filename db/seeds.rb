@@ -53,7 +53,7 @@ e4 = Exhibit.create(
     type: mitologia)
 Cord.create(
     exhibit_id: e4.id,
-    cord: "626,247,656,299")
+    cord: "pos-eksp-4")
 
 e5 = Exhibit.create(
     title: 'tzw. Narcyz (młodzieniec wsparty na kolumnie)', 
@@ -64,7 +64,7 @@ e5 = Exhibit.create(
     type: mitologia)
 Cord.create(
     exhibit_id: e5.id,
-    cord: "545,322,603,374")
+    cord: "pos-eksp-5")
 
 
 e6 = Exhibit.create(
@@ -76,7 +76,7 @@ e6 = Exhibit.create(
     type: mitologia)
 Cord.create(
     exhibit_id: e6.id,
-    cord: "609,344,656,396")
+    cord: "pos-eksp-6")
 
 
 e7 = Exhibit.create(
@@ -89,7 +89,7 @@ e7 = Exhibit.create(
     type: mitologia)
 Cord.create(
     exhibit_id: e7.id,
-    cord: "660,285,727,341")
+    cord: "pos-eksp-7")
 
 
 e8 = Exhibit.create(
@@ -103,7 +103,7 @@ e8 = Exhibit.create(
   type: sportowcy)
 Cord.create(
     exhibit_id: e8.id,
-    cord: "766,291,833,347")
+    cord: "pos-eksp-8")
 
 
 e9 = Exhibit.create(
@@ -115,7 +115,7 @@ e9 = Exhibit.create(
     type: mitologia)
 Cord.create(
     exhibit_id: e9.id,
-    cord: "617,393,672,438")
+    cord: "pos-eksp-9")
 
 
 e10 = Exhibit.create(
@@ -127,7 +127,7 @@ e10 = Exhibit.create(
     type: mitologia)
 Cord.create(
     exhibit_id: e10.id,
-    cord: "747,372,833,445")
+    cord: "pos-eksp-10")
 
 
 

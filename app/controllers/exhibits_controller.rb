@@ -1,6 +1,6 @@
 class ExhibitsController < ApplicationController
   before_action :set_exhibit, only: [:show, :edit, :update, :destroy]
-
+  
   # GET /exhibits
   def index
     @types = Type.all
@@ -17,7 +17,7 @@ class ExhibitsController < ApplicationController
   def new
     @exhibit = Exhibit.new
     @types = Type.all
-    3.times do 
+    2.times do 
       question = @exhibit.questions.build
       3.times { question.answers.build }
     end
