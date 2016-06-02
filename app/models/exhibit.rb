@@ -20,21 +20,11 @@ class Exhibit < ActiveRecord::Base
     #self.keywords = [title, author, ex_id].map(&:to_s).map(&:downcase).join(' ')
   end
 
-  
   def previous
     Exhibit.where(["id < ?", id]).last
   end
 
   def next
     Exhibit.where(["id > ?", id]).first
-  end
-
-
-  def tour_previous
-    Exhibit.where(["ex_id < ?", ex_id]).last
-  end
-
-  def tour_next
-    Exhibit.where(["ex_id > ?", ex_id]).first
   end
 end
