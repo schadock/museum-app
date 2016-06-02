@@ -16,7 +16,7 @@ e1 = Exhibit.create(
 
 Cord.create(
     exhibit_id: e1.id,
-    cord: "602,128,650,187")
+    cord: "pos-eksp-1")
 
 e2 = Exhibit.create(
   title: 'Woźnica Diomedesa (tzw. Auriga)', 
@@ -28,7 +28,7 @@ e2 = Exhibit.create(
   type: sportowcy)
 Cord.create(
     exhibit_id: e2.id,
-    cord: "576,191,624,250")
+    cord: "pos-eksp-2")
 
 
 e3 = Exhibit.create(
@@ -40,7 +40,7 @@ e3 = Exhibit.create(
     type: mitologia)
 Cord.create(
     exhibit_id: e3.id,
-    cord: "584,273,630,323")
+    cord: "pos-eksp-3")
 
 
 e4 = Exhibit.create(
