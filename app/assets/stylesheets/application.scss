@@ -5,23 +5,23 @@
 
 * {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+		  box-sizing: border-box;
 }
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+		  box-sizing: border-box;
 }	
 
 body{
 	
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color:#fff;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color:#fff;
 }
 
 main{
@@ -32,14 +32,14 @@ main{
 	background-image: url("/assets/bg.png");
 }
 .center {
-    margin: 0 auto;
-    width: 80%;
-    text-align: center;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
 }
 .center-img {
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
 }
 .mg-top{
 	margin-top: 100px;
@@ -94,22 +94,22 @@ main{
 .btn-start:focus,
 .btn-start.focus {
 	color: #fff;
-    background-color: rgba(0,0,0,0);
-    border: 2px solid white;
+	background-color: rgba(0,0,0,0);
+	border: 2px solid white;
 }
 
 .btn-start:hover {
-    color: #fff;
-    background-color: rgba(0,0,0,0);
-    border: 2px solid white;
+	color: #fff;
+	background-color: rgba(0,0,0,0);
+	border: 2px solid white;
 }
 
 .btn-start:active,
 .btn-start.active,
 .open > .dropdown-toggle.btn-start {
-    color: #fff;
-    background-color: rgba(0,0,0,0);
-    border: 2px solid white;
+	color: #fff;
+	background-color: rgba(0,0,0,0);
+	border: 2px solid white;
 }
 
 .btn-quiz {
@@ -122,22 +122,22 @@ main{
 .btn-quiz:focus,
 .btn-quiz.focus {
 		color: #000;
-    background-color: rgba(0,0,0,0);
-    border: 2px solid #000;
+	background-color: rgba(0,0,0,0);
+	border: 2px solid #000;
 }
 
 .btn-quiz:hover {
-    color: #000;
-    background-color: rgba(0,0,0,0);
-    border: 2px solid #000;
+	color: #000;
+	background-color: rgba(0,0,0,0);
+	border: 2px solid #000;
 }
 
 .btn-quiz:active,
 .btn-quiz.active,
 .open > .dropdown-toggle.btn-quiz {
-    color: #000;
-    background-color: rgba(0,0,0,0);
-    border: 2px solid #000;
+	color: #000;
+	background-color: rgba(0,0,0,0);
+	border: 2px solid #000;
 }
 
 .popover {
@@ -167,15 +167,15 @@ main{
 	white-space: normal;
 			  background-color: #000;
 			  -webkit-background-clip: padding-box;
-			          background-clip: padding-box;
+					  background-clip: padding-box;
 			  border: 0px solid #000;
 			  border: 0px solid rgba(0, 0, 0, .2);
 			  border-radius: 6px;
 			  -webkit-box-shadow: 0 0px 25px rgba(0, 0, 0, 1);
-			          box-shadow: 0 0px 25px rgba(0, 0, 0, 1);
+					  box-shadow: 0 0px 25px rgba(0, 0, 0, 1);
 			  line-break: auto;
 			}
-      .popover.bottom {
+	  .popover.bottom {
 			  margin-top: 40px;
 			}
 			.popover-title {
@@ -350,7 +350,7 @@ main{
 			}
 
 			.fa-ul2 {
-			    margin-left: 0;
+				margin-left: 0;
 			}
 
 			#footer {
@@ -441,6 +441,13 @@ main{
 	z-index:0;
 	position:relative;
 }
+	
+	.question-correct{
+		background-color: green;
+	}
+	.question-wrong{
+		background-color: red;
+	}
 
 #pos-eksp-1{ position:absolute; width:65px; height:65px; top:127px; left:595px; }
 #pos-eksp-2{ position:absolute; width:60px; height:60px; top:197px; left:567px; }
