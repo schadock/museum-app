@@ -13,7 +13,6 @@
       <% end %>
       
       <div class="row" style="margin-top: 15px;">
-      
         <div class="col-xs-12">
           <img src="<%= @exhibit.big_photo %>" alt="<%= @exhibit.title %>" class="media-object img-rounded img-responsive" >
         </div>
@@ -45,14 +44,13 @@
       </div> 
       <% unless @exhibit.questions.blank? %>
         <div class="row">
-          <div class="col-xs-12"><p class="item-style1">QUIZ</p></div>
-          <div class="col-xs-12">
+          <div class="col-xs-12"><p class="item-style1">QUIZ</p>
             <% for question in @exhibit.questions %>
               <%= question.content %>
               
               <% for answer in question.answers %>
                 <div class="row">
-                  <div class="col-xs-10">
+                  <div class="col-xs-10 radio">
                     <label class="checkbox">
                     <input type="checkbox"/>
                       <%= answer.content %>
