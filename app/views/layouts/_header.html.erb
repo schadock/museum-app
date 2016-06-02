@@ -10,17 +10,8 @@
               <i class="fa-li fa fa-map-marker"></i><%= link_to "Mapa", static_pages_map_path, :class=> "main-menu-item" %>
             </li>
             <li class="main-menu-st">
-              <i class="fa-li fa fa-compass"></i><span class="main-menu-item">Wycieczki</span>
-              
-                <li>
-                  <a href="https://mysterious-anchorage-61399.herokuapp.com/exhibits?collection=Mitologia">Mitologia</a>
-                </li>
-                <li>
-                  <a href="https://mysterious-anchorage-61399.herokuapp.com/exhibits?collection=Sportowcy">Sportowcy</a>
-                  </li>
-                  <li>
-                  <a href="https://mysterious-anchorage-61399.herokuapp.com/exhibits?collection=Postacie+historyczne">Postacie historyczne</a
-                  </li>
+              <i class="fa-li fa fa-compass"></i>
+              <%= link_to "Kolekcje", static_pages_collections_path, :class=> "main-menu-item" %>
             </li>
             <li class="main-menu-st">
               <i class="fa-li fa fa-eye"></i></i><%= link_to "Eksponaty", exhibits_path, :class=> "main-menu-item" %>

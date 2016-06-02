@@ -4,7 +4,7 @@
       <%= image_tag 'mapa.png', :id=>'map', :usemap=>'image-maps-2016-05-15-152644' %>  
       <map name="image-maps-2016-05-15-152644" id="ImageMapsCom-image-maps-2016-05-15-152644">
       <% @cords.each_with_index do |cord, index| %>
-        <area  title="<%= index %>" href="<%= exhibit_path(cord.exhibit_id) %>" shape="rect" coords="<%= cord.cord%>" style="outline:none;" target="_self"     />
+        <area  title="<%= index %>" href="<%= exhibit_path(cord.exhibit_id) %>" shape="rect" coords="<%= cord.cord%>" style="outline:none;" target="_self" />
       <% end %>
      </map>
     </div>
