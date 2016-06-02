@@ -1,19 +1,21 @@
 <div class="site-m-row">
-      <div class="subpanel">
-        <i class="fa fa-chevron-left"></i><%= link_to "Wróć", :back, :class =>"subpanel-item" %>
-      </div>
-   </div>
-<div class="container-fluid center">
-  <div class="row" style="margin-top: 10px;"> 
+  <div class="subpanel">
+    <i class="fa fa-chevron-left"></i><%= link_to "Wróć", :back, :class =>"subpanel-item" %>
+  </div>
+</div>
+
+
+<div class="row" style="margin-top: 10px;"> 
+  <div class="col-xs-12">
     <p id="notice"><%= notice %></p>  
       <% if user_signed_in? %>
         <%= link_to 'Edit', edit_exhibit_path(@exhibit), :class=> "btn btn-default" %> 
       <% end %>
       
       <div class="row" style="margin-top: 15px;">
-        <div class="center-img"><div class="col-xs-12">
-          <img src="<%= @exhibit.big_photo %>" alt="<%= @exhibit.title %>" style="">
-        </div>
+      
+        <div class="col-xs-12">
+          <img src="<%= @exhibit.big_photo %>" alt="<%= @exhibit.title %>" class="media-object img-rounded img-responsive" >
         </div>
       </div>  
 
@@ -72,20 +74,20 @@
             <% end %>  
           </div>          
         </div>
-      <% end %>      1
-      <div id="footer">
-        <div class="footer-button">
-          <% if @exhibit.tour_previous %>
-            <%= link_to "", @exhibit.previous, :class=> "fa fa-angle-left fa-3x footer-btn" %>
-          <% end %>
-          <% if @exhibit.tour_next %>
-            <%= link_to "", @exhibit.next, :class=> "fa fa-angle-right fa-3x footer-btn" %>
-          <% end %>
-        </div>
-      </div>
+      <% end %>   
+  </div>
+  <div id="footer">
+    <div class="footer-button">
+      <% if @exhibit.tour_previous %>
+        <%= link_to "", @exhibit.previous, :class=> "fa fa-angle-left fa-3x footer-btn" %>
+      <% end %>
+      <% if @exhibit.tour_next %>
+        <%= link_to "", @exhibit.next, :class=> "fa fa-angle-right fa-3x footer-btn" %>
+      <% end %>
     </div>
   </div>
 </div>
+
 
 
 
