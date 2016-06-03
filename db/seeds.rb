@@ -14,7 +14,17 @@ e1 = Exhibit.create(
     ex_id: '1',
     type: nil,
     big_photo: "http://kacpersalamon.pl/muzeum/bigphoto/1.png",
-    thumb_photo: "http://kacpersalamon.pl/muzeum/ikonki/1.png")
+    thumb_photo: "http://kacpersalamon.pl/muzeum/ikonki/1.png",
+        questions_attributes:[
+        content: "Dlaczego władze Aten zakazały tworzenia steli nagrobnych?",
+            answers_attributes:[
+            content: "ze względu na nadmierne ich zdaniem zbytek grobowców",
+            correct: true,
+            content: "przez złe moce, które wydobywały się z amfor",
+            correct: false,
+            content: "ze względu na brak materiałów budowlanych przy budowie Olimpu",
+            correct: false]
+        ])
 
 Cord.create(
     exhibit_id: e1.id,

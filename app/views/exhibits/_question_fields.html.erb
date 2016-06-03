@@ -1,13 +1,12 @@
-<div class="form-group">
-  <fieldset>
-    <%= f.label :content, "Pytanie" %></br> 
-    <%= f.text_area :content, :rows => 2 %></br>  
-    <%= f.check_box :_destroy %>
-    <%= f.label :_destroy, "Usuń Pytanie" %>
+<fieldset>
+  <%= f.label :content, "Pytanie" %></br> 
+  <%= f.text_area :content, :rows => 2 %></br>  
+  <%= f.check_box :_destroy %>
+  <%= f.label :_destroy, "Usuń Pytanie" %>
 
-    <%= f.fields_for :answers do |buldier| %>
-      <%= render 'answer_fields', :f => buldier %>
-    <% end %>
-    <%= link_to_add_fields "Dodaj Odpowiedzi", f, :answers %>
-  </fieldset>
-</div>
+  <%= f.fields_for :answers do |buldier| %>
+    <%= render 'answer_fields', :f => buldier %>
+  <% end %>
+  <%= link_to_add_fields "Dodaj Odpowiedzi", f, :answers %>
+</fieldset>
+ 
