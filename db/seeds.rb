@@ -19,9 +19,9 @@ e1 = Exhibit.create(
     { 
      content: 'Dlaczego władze Aten zakazały tworzenia steli nagrobnych?',
      answers_attributes: [
-       {content: "ze względu na nadmierne ich zdaniem zbytek grobowców", correct: false},
-       {content: "przez złe moce, które wydobywały się z amfor", correct: true},
-       {content: "ze względu na brak materiałów budowlanych przy budowie Olimpu", correct: true}
+       {content: "ze względu na nadmierne ich zdaniem zbytek grobowców", correct: true},
+       {content: "przez złe moce, które wydobywały się z amfor", correct: false},
+       {content: "ze względu na brak materiałów budowlanych przy budowie Olimpu", correct: false}
      ]
    }
  ]
