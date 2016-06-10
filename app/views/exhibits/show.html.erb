@@ -5,14 +5,14 @@
 </div>
 
 
-<div class="row" style="margin-top: 10px;"> 
+<div class="row"> 
   <div class="col-xs-12">
     <p id="notice"><%= notice %></p>  
       <% if user_signed_in? %>
         <%= link_to 'Edit', edit_exhibit_path(@exhibit), :class=> "btn btn-default" %> 
       <% end %>
       
-      <div class="row" style="margin-top: 15px;">
+      <div class="row">
         <div class="col-xs-12">
           <img src="<%= @exhibit.big_photo %>" alt="<%= @exhibit.title %>" class="media-object img-rounded img-responsive" >
         </div>
