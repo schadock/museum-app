@@ -14,7 +14,9 @@
       
       <div class="row">
         <div class="col-xs-12">
+        <%= link_to @exhibit.big_photo, :target => "_blank" do %>
           <img src="<%= @exhibit.big_photo %>" alt="<%= @exhibit.title %>" class="media-object img-rounded img-responsive" >
+        <% end %>
         </div>
       </div>  
 
