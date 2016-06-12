@@ -13,6 +13,9 @@ gem 'devise', '~> 3.5', '>= 3.5.2'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'font-awesome-sass'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
+gem 'sunspot_rails'
+gem 'sunspot_solr'
+gem 'progress_bar'  
 
 group :development, :test do
   gem 'byebug'

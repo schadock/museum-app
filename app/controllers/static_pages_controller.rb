@@ -14,6 +14,7 @@ class StaticPagesController < ApplicationController
   end
 
   def collections
+    @exhibits = Exhibit.search(params[:keyword]).collection(params[:collection])
     @types = Type.all    
   end
 
