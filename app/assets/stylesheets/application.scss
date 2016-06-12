@@ -31,11 +31,6 @@ main{
 .body-img{
 	background-image: url("/assets/bg.png");
 }
-.center {
-	margin: 0 auto;
-	width: 80%;
-	text-align: center;
-}
 .center-img {
 	margin: 0 auto;
 	width: 100%;
@@ -273,7 +268,6 @@ main{
 			  background-color: #ececec; 
 			  height: 45px; 
 			  box-shadow:0px 5px 10px rgba(0, 0, 0, .25);
-			  margin-top: 80px;
 			}
 
 			.subpanel {
@@ -371,10 +365,6 @@ main{
 			}
 
 			@media (min-width: 750px) {
-				main{
-					width:70%;
-				}
-
 				.footer-button{
 					margin-left: 0px;
 				}
