@@ -47,27 +47,24 @@
         <div class="row">
           <div class="col-xs-12"><p class="item-style1">QUIZ</p>
             <% for question in @exhibit.questions %>
+              <b>
               <%= question.content %>
+              </b>
+              <br/>
               <% for answer in question.answers %>
-                <div class="row">
-                  <div class="col-xs-10 radio">
-                    <label>
-                    <button type="input" class="hey">
-                      <%= answer.content %>
-                    </button>
-                    </label>
-                    <div class="ws">
-                      <% if answer.correct %>
-                        <div class="col-xs-12 question-correct">
-                          Dobra odpowiedź
-                        </div>
-                        <% else %>
-                        <div class="col-xs-12 question-wrong">
-                          Zła odpowiedź
-                        </div>
-                      <% end %>
+              <div>
+                <button class="btn odp"><%= answer.content %></button>  
+                <div class="spr">
+                  <% if answer.correct %>
+                    <div class="alert alert-success">
+                      Dobra odpowiedź
                     </div>
-                  </div>
+                    <% else %>
+                    <div class="alert alert-danger ">
+                      Zła odpowiedź
+                    </div>
+                  <% end %>
+                </div>
                 </div>
               <% end %> 
             <% end %>  
@@ -88,7 +85,8 @@
 </div>
 
 <script>
-  $(".hey").click(function(){
-   $(this).next("div").show();    
+  $('.spr').hide();
+  $('.odp').on('click', function(e) {
+    $(this).next().toggle('.spr'); 
   });
 </script>

@@ -42,7 +42,7 @@
                   <%= form_tag exhibits_path, :method => :get do %>
                     <p>
                       <%= text_field_tag :search, params[:search], :class =>"form-control" %>
-                      <%= submit_tag "Szukaj", :title => nil %>
+                      <%= submit_tag "Szukaj", :class=>"btn btn-start", :title => nil %>
                     </p>
                   <% end %>
               </li>
