@@ -29,6 +29,6 @@ class Exhibit < ActiveRecord::Base
   end
 
   searchable do
-    text :title, :ex_id
+    text :title,:description, :ex_id
   end
 end

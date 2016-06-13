@@ -5,13 +5,10 @@ class ExhibitsController < ApplicationController
   def index
     @types = Type.all
     #@exhibits = Exhibit.search(params[:keyword]).collection(params[:collection])
-    
-
     @search = Exhibit.search do 
       fulltext params[:search]
     end
     @exhibits = @search.results
-    @exhibits = @exhibits.collection(params[:collection]) if params[:collection].present?
   end
 
   # GET /exhibits/1

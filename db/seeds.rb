@@ -32,10 +32,10 @@ Cord.create(
     cord: "pos-eksp-1")
 
 e2 = Exhibit.create(
-  title: 'Woźnica Diomedesa (tzw. Auriga)', 
+  title: 'Woźnica Diomedesa', 
   author:  'Pitagoras z Region', 
   date_of_origin: 'ok. 475 r. p.n.e.', 
-  description: 'Posąg Aurigi jest jedną z niewielu rzeźb antycznych z brązu, zachowanych do naszych czasów. Stanowił on fragment wielkiego pomnika władcy sycylijskiego Polyzatosa. Wystawił on w wyścigach organizowanych na cześć Apolla w jego sanktuarium w Delos zaprzęg, który wygrał zawody. Pomnik przedstawiał kwadrygę z woźnicą i stojącym obok Polyzatosem, ustawioną na wysokim cokole, obok świątyni Apolla. Rzeźbę usytuowano tak, by mogli ją oglądać ludzie idący w procesji wokół świątyni, stąd pochylenie i zwrócenie głowy woźnicy w bok. Jest to dzieło przełomowe, mające jeszcze cechy dawnego, archaicznego stylu rzeźby greckiej, a zarazem kryjące zapowiedź dążenia do naśladowania rzeczywistości, właściwą sztuce okresu klasycznego. Pionowe fałdy długiej szaty (xystis) kojarzące się ze żłobkowaniem kolumny, nadają postaci monumentalny, jeszcze nieco archaiczny  charakter. Lekki skręt ciała sprawiający, że postać staje się bardziej naturalna, a także szczegółowo opracowana twarz z migdałowymi oczami i prostym nosem zapowiadają już sztukę okresu klasycznego.
+  description: 'Posąg Aurigi (Woźnica Diomedesa) jest jedną z niewielu rzeźb antycznych z brązu, zachowanych do naszych czasów. Stanowił on fragment wielkiego pomnika władcy sycylijskiego Polyzatosa. Wystawił on w wyścigach organizowanych na cześć Apolla w jego sanktuarium w Delos zaprzęg, który wygrał zawody. Pomnik przedstawiał kwadrygę z woźnicą i stojącym obok Polyzatosem, ustawioną na wysokim cokole, obok świątyni Apolla. Rzeźbę usytuowano tak, by mogli ją oglądać ludzie idący w procesji wokół świątyni, stąd pochylenie i zwrócenie głowy woźnicy w bok. Jest to dzieło przełomowe, mające jeszcze cechy dawnego, archaicznego stylu rzeźby greckiej, a zarazem kryjące zapowiedź dążenia do naśladowania rzeczywistości, właściwą sztuce okresu klasycznego. Pionowe fałdy długiej szaty (xystis) kojarzące się ze żłobkowaniem kolumny, nadają postaci monumentalny, jeszcze nieco archaiczny  charakter. Lekki skręt ciała sprawiający, że postać staje się bardziej naturalna, a także szczegółowo opracowana twarz z migdałowymi oczami i prostym nosem zapowiadają już sztukę okresu klasycznego.
   Pomnik został zniszczony w wyniku osunięcia się skał w 372 r p.n.e. Resztki monumentu odnaleziono dopiero w 1896 r., zatem w czasach powstawania szczecińskiej kolekcji Auriga był jednym z najnowszych i najciekawszych odkryć.',  
   ex_id: '2', 
   type: sportowcy,
@@ -44,8 +44,6 @@ e2 = Exhibit.create(
 Cord.create(
     exhibit_id: e2.id,
     cord: "pos-eksp-2")
-
-
 e3 = Exhibit.create(
     title: 'Lekyt nagrobny', 
     author:  'nieznany twórca attycki', 
@@ -58,36 +56,54 @@ e3 = Exhibit.create(
 Cord.create(
     exhibit_id: e3.id,
     cord: "pos-eksp-3")
-
-
 e4 = Exhibit.create(
-    title: 'Głowa Meduzy (tzw. Meduza Rondanini)', 
+    title: 'Głowa Meduzy', 
     author:  'autor nieznany', 
     date_of_origin: 'koniec V w. p.n.e.', 
-    description: 'W greckiej mitologii Meduza była jedną z trzech sióstr o potwornym wyglądzie. Z jej głowy wyrastały węże, a jej spojrzenie zamieniało ludzi w kamienie. Meduzę pokonał bohater Perseusz dzięki pomocy kilkorga bogów olimpijskich. Otrzymał od nich m.in. hełm czyniący go niewidzialnym i polerowaną tarczę; patrząc w nią widział potwora, unikając jednocześnie zabójczego spojrzenia. Odciętą głowę pokonanej Meduzy Perseusz podarował Atenie, której najwięcej zawdzięczał, ta zaś umieściła ją na swojej tarczy (egidzie). Tak też – z głową Meduzy na tarczy – zwykle przedstawiano Atenę. Rzeźba, pochodząca z okresu klasycznego, utrzymana była jednak w surowym duchu epoki archaicznej. Świadome nawiązanie do dawnej sztuki mogło być związane z pochodzeniem: głowa Meduzy mogła być bowiem wzorowana na dekoracji tarczy posągu Ateny dłuta Fidiasza, ustawionego w Partenonie na akropolu ateńskim. 
+    description: 'W greckiej mitologii Meduza (tzw. Meduza Rondanini) była jedną z trzech sióstr o potwornym wyglądzie. Z jej głowy wyrastały węże, a jej spojrzenie zamieniało ludzi w kamienie. Meduzę pokonał bohater Perseusz dzięki pomocy kilkorga bogów olimpijskich. Otrzymał od nich m.in. hełm czyniący go niewidzialnym i polerowaną tarczę; patrząc w nią widział potwora, unikając jednocześnie zabójczego spojrzenia. Odciętą głowę pokonanej Meduzy Perseusz podarował Atenie, której najwięcej zawdzięczał, ta zaś umieściła ją na swojej tarczy (egidzie). Tak też – z głową Meduzy na tarczy – zwykle przedstawiano Atenę. Rzeźba, pochodząca z okresu klasycznego, utrzymana była jednak w surowym duchu epoki archaicznej. Świadome nawiązanie do dawnej sztuki mogło być związane z pochodzeniem: głowa Meduzy mogła być bowiem wzorowana na dekoracji tarczy posągu Ateny dłuta Fidiasza, ustawionego w Partenonie na akropolu ateńskim. 
     Oryginał nie jest znany, zachowała się natomiast antyczna kopia z marmuru, będąca własnością włoskiej rodziny arystokratycznej, od której nazwiska wzięła się zwyczajowa nazwa dzieła. W szczecińskiej rekonstrukcji zwracają uwagę długie rzęsy Meduzy, a także wykonane z barwnej emalii oczy.  W czasach powstania kolekcji uważano ją za dzieło z kręgu Kresilasa, dziś łączy się ją też z Polikletem. Dzieła i sylwetki obu rzeźbiarzy przedstawiamy w dalszej części wystawy.',  
     ex_id: '4',
     type: mitologia,
     big_photo: "http://kacpersalamon.pl/muzeum/bigphoto/4.png",
-    thumb_photo: "http://kacpersalamon.pl/muzeum/ikonki/3.png")
+    thumb_photo: "http://kacpersalamon.pl/muzeum/ikonki/3.png",
+    questions_attributes: [
+    { 
+     content: 'Dlaczego na Peryseusza nie działał zabójczy wzrok Meduzy?',
+     answers_attributes: [
+       {content: "miał hełm czyniący go niewidzialnym i polerowaną tarczę", correct: true},
+       {content: "miał pelerynę niewidkę i stalową tarczę", correct: false},
+       {content: "miał buty które przykuwały wzrok Meduzy", correct: false}
+     ]
+   }
+ ]
+)
 Cord.create(
     exhibit_id: e4.id,
     cord: "pos-eksp-4")
-
 e5 = Exhibit.create(
-    title: 'tzw. Narcyz (młodzieniec wsparty na kolumnie)', 
+    title: 'Narcyz', 
     author:  'naśladowca Polikleta', 
     date_of_origin: 'ok. 400 r. w. p.n.e.', 
     description: 'Rzeźba, przez długi czas łączona z Polikletem, jest zapewne dziełem jego naśladowcy, młodszego o jedno pokolenie. Wedle tradycji przedstawia Narcyza – chłopca tak pięknego, że zakochał się we własnym odbiciu, które ujrzał w wodzie.',  
     ex_id: '5',
     type: mitologia,
     big_photo: "http://kacpersalamon.pl/muzeum/bigphoto/7.png",
-    thumb_photo: "http://kacpersalamon.pl/muzeum/ikonki/6.png")
+    thumb_photo: "http://kacpersalamon.pl/muzeum/ikonki/6.png",
+        questions_attributes: [
+    { 
+     content: 'Jak długo żył Narcyz?',
+     answers_attributes: [
+       {content: "aż zobaczył swoje odbicie i umarł z tęsknoty", correct: true},
+       {content: "do 42 roku życia", correct: false},
+       {content: "do momentu w którym zobaczył zmarszczki na swoim czole", correct: false}
+     ]
+   }
+ ]
+)
 Cord.create(
     exhibit_id: e5.id,
-    cord: "pos-eksp-5")
-
-
+    cord: "pos-eksp-5"
+    )
 e6 = Exhibit.create(
     title: 'Perykles', 
     author:  'Kresilas z Aten',
@@ -100,8 +116,6 @@ e6 = Exhibit.create(
 Cord.create(
     exhibit_id: e6.id,
     cord: "pos-eksp-6")
-
-
 e7 = Exhibit.create(
     title: 'Atena i Marsjasz',
     author:  'Myron z Eleuterai',
@@ -115,8 +129,6 @@ e7 = Exhibit.create(
 Cord.create(
     exhibit_id: e7.id,
     cord: "pos-eksp-7")
-
-
 e8 = Exhibit.create(
   title: 'Dyskobol', 
   author:  'Myron z Eleuterai', 
@@ -131,13 +143,11 @@ e8 = Exhibit.create(
 Cord.create(
     exhibit_id: e8.id,
     cord: "pos-eksp-8")
-
-
 e9 = Exhibit.create(
-    title: 'przedstawienie Bogini tzw. Aspazja', 
+    title: 'Aspazja', 
     author:  'Kalamis',
     date_of_origin: 'ok. 465 p.n.e.', 
-    description: 'Tradycyjna nazwa rzeźby odnosi się do słynnej Aspazji z Miletu, żony ateńskiego stratega Peryklesa (jego podobiznę prezentujemy pośród portretów) W rzeczywistości było to przedstawienie bogini, być może Afrodyty ustawione w Propylejach - monumentalnej bramie ateńskiego Akropolu. Doskonale wymodelowane dzieło Kalamisa uznaje się za syntezę osiągnięć dwóch szkół rzeźbiarskich okresu klasycznego: surowej, doryckiej tektoniki i attyckiego wdzięku.', 
+    description: 'Tradycyjna nazwa rzeźby odnosi się do słynnej Aspazji z Miletu, żony ateńskiego stratega Peryklesa (jego podobiznę prezentujemy pośród portretów) W rzeczywistości było to przedstawienie bogini, być może Afrodyty ustawione w Propylejach - monumentalnej bramie ateńskiego Akropolu. Doskonale wymodelowane dzieło Kalamisa uznaje się za syntezę osiągnięć dwóch szkół rzeźbiarskich okresu klasycznego: surowej, doryckiej tektoniki i attyckiego wdzięku.', 
     ex_id: '9',
     type: mitologia,
         big_photo: "http://kacpersalamon.pl/muzeum/bigphoto/10.png",
@@ -145,8 +155,6 @@ e9 = Exhibit.create(
 Cord.create(
     exhibit_id: e9.id,
     cord: "pos-eksp-9")
-
-
 e10 = Exhibit.create(
     title: 'Dionizos', 
     author:  'Alkamenes',
@@ -155,29 +163,46 @@ e10 = Exhibit.create(
     ex_id: '10',
     type: mitologia,
     big_photo: "http://kacpersalamon.pl/muzeum/bigphoto/16.png",
-    thumb_photo: "http://kacpersalamon.pl/muzeum/ikonki/15.png")
+    thumb_photo: "http://kacpersalamon.pl/muzeum/ikonki/15.png",
+        questions_attributes: [
+    { 
+     content: 'Kto był ojcem Dionizosa?',
+     answers_attributes: [
+         {content: "Zeus", correct: true},
+         {content: "Posejdon", correct: false},
+         {content: "Homer", correct: false}
+     ]
+   }
+ ]
+)
 Cord.create(
     exhibit_id: e10.id,
     cord: "pos-eksp-10")
-
-
-
 e11 = Exhibit.create(
-    title: 'Doryforos- Herma portretowa', 
+    title: 'Doryforos', 
     author:  'Poliklet z Argot',
     date_of_origin: 'ok. 450 440 p.n.e.', 
     description: 'Popiersie (herma) jest fragmentem posągu słynnego Doryforosa, eksponowanego na naszej wystawie. Dzieło Polikleta było w starożytności wielokrotnie kopiowane. Herma, która posłużyła za wzór dla szczecińskiej rzeźby, wykonana w drugiej połowie I w, p n,e, przez greckiego twórcę Apoloniosa, znaleziona została w willi rodziny Pizonów w Herkulanum, antycznym mieście zasypanym wraz z Pompejami przez popioły Wezuwiusza.', 
     ex_id: '11',
     type: nil,
     big_photo: "http://kacpersalamon.pl/muzeum/bigphoto/8.png",
-    thumb_photo: "http://kacpersalamon.pl/muzeum/ikonki/7.png")
+    thumb_photo: "http://kacpersalamon.pl/muzeum/ikonki/7.png",
+        questions_attributes: [
+    { 
+     content: 'Jaki procent całego ciała miała twarz Doryforosa w Kanonie Polikleta?',
+     answers_attributes: [
+       {content: "10%", correct: true},
+       {content: "8%", correct: false},
+       {content: "15%", correct: false}
+     ]
+   }
+ ]
+)
 Cord.create(
     exhibit_id: e11.id,
     cord: "pos-eksp-11")
-
-
 e12 = Exhibit.create(
-    title: 'Doryforos (Niosący włócznię)', 
+    title: 'Doryforos', 
     author:  'Poliklet z Argos', 
     date_of_origin: 'ok. 450–440 p.n.e.', 
     description: 'Rzeźba przedstawia oszczepnika, zapewne zwycięzcę w zawodach sportowych. Jest to najsłynniejsze dzieło Polikleta, znane przede wszystkim jako ilustracja opracowanego przez niego kanonu, czyli sposobu przedstawiania postaci ludzkiej. Kanon Polikleta miał charakter geometryczny i opierał się na ustaleniu właściwych, zdaniem twórcy, proporcji części ciała względem siebie nawzajem i względem całej figury. Tors miał się zamykać w obrysie kwadratu, głowa – kuli, stopa miała stanowić 1/6 wysokości całego ciała, twarz – 1/10 itd. Punktem wyjścia dla Polikleta były zapewne popularne w ówczesnej Grecji pitagorejskie teorie, dopatrujące się idei piękna w zestawieniach liczb. Kanon nie powstał jednak tylko z suchych obliczeń, ale też z wnikliwej obserwacji rzeczywistości i dążenia do osiągnięcia absolutnej harmonii ciała, dlatego Poliklet starał się nadać rzeźbie pozór łagodnego ruchu, ustawiając ją w swobodnej pozie, zwanej kontrapostem. Teoria Polikleta wzbudzała w jego czasach gorące dyskusje. Wedle antycznej anegdoty, aby je uciąć, mistrz wykonał dwa posągi z tego samego modela, jeden z nich w myśl własnych założeń, drugi w duchu tego, co twierdzili krytycy. Gdy obie rzeźby wystawiono na widok publiczny, drugi z posągów został wyśmiany przez widzów, którzy w ten sposób przyznali rację Polikletowi.
@@ -189,9 +214,8 @@ e12 = Exhibit.create(
 Cord.create(
     exhibit_id: e12.id,
     cord: "pos-eksp-12")
-
 e13 = Exhibit.create(
-    title: 'Młodzieniec, tzw. KYNISKOS', 
+    title: 'Kyniskos', 
     author:  'naśladowca Polikleta', 
     date_of_origin: 'koniec V w. p.n.e.', 
     description: 'W czasach powstawania szczecińskiej kolekcji posąg ten – znany z marmurowej kopii z ok. 150 r. p.n.e. – uchodził za dzieło samego Polikleta. Utożsamiano go ze statuą Kyniskosa, zwycięzcy w olimpijskich zawodach bokserskich z 464–460 r. p.n.e. Przy tworzeniu szczecińskiej rzeźby, kierując się tą hipotezą, dokonano swobodnej rekonstrukcji prawej ręki. Obecnie uważa się, że rzeźba ta nie jest dziełem samego mistrza, lecz jednego z jego uczniów (nie przedstawia zatem Kyniskosa) i stanowi świadectwo wielkiego wpływu, jaki Poliklet wywarł na rzeźbę grecką. 
@@ -203,10 +227,8 @@ e13 = Exhibit.create(
 Cord.create(
     exhibit_id: e13.id,
     cord: "pos-eksp-13")
-
-
 e14 = Exhibit.create(
-    title: 'Ranna Amazonka (tzw. Amazonka Sosiklesa)',
+    title: 'Ranna Amazonka',
     author:  'Poliklet lub Fidiasz',
     date_of_origin: 'ok. 440 p.n.e.',
     description: 'Rzeźba ta jest pokłosiem jednego z najsłynniejszych konkursów artystycznych antyku. W okresie klasycznym ogłaszanie takich konkursów było częstą praktyką, zaś przedstawione przez artystów prace porównywano przede wszystkim pod względem sposobu ujęcia tematu. Ranna Amazonka powstała dla wielkiej świątyni Artemidy (bogini lasów i łowów) w Efezie. W okresie wojen miedzy miastami greckimi rzeźba ta miała przypominać o prawie azylu w świątyni. Amazonka, należąca do mitycznego plemienia wojowniczych kobiet, będąca dla Greków symbolem waleczności, pokazana została w chwili, gdy jest całkowicie bezbronna. Zraniona, zdejmuje delikatnie szatę z ramienia. Pierwsze miejsce w konkursie zajął Poliklet, drugie Fidiasz, a trzecie Kresilas (sylwetki tych twórców przedstawiamy w dalszej części wystawy). 
@@ -218,10 +240,8 @@ e14 = Exhibit.create(
 Cord.create(
     exhibit_id: e14.id,
     cord: "pos-eksp-14")
-
-
 e15 = Exhibit.create(
-    title: 'Herakles Epitrapezios ', 
+    title: 'Herakles Epitrapezios', 
     author:  'Lizyp z Sykionu',
     date_of_origin: '332 r. p.n.e.', 
     description: 'Rzeźba powstała zapewne w związku ze zdobyciem przez Aleksandra Macedońskiego Tyru, fenickiego miasta w dzisiejszym Libanie. Przedstawia ona mitycznego herosa greckiego, Heraklesa, zarazem jednak mogła być przez Fenicjan rozumiana jako wizerunek ich boga mórz, Melkarta, legendarnego założyciela Tyru. O twórcy tego dzieła, Lizypie, mówimy obszerniej przy figurze Apoksjomenosa.',  
@@ -232,9 +252,8 @@ e15 = Exhibit.create(
 Cord.create(
     exhibit_id: e15.id,
     cord: "pos-eksp-15")
-
 e16 = Exhibit.create(
-    title: 'Apollo Kitarodos (grający na kitarze – antycznym instrumencie)',
+    title: 'Apollo Kitarodos',
     author:  'Poliklet z Argos',
     date_of_origin: 'ok. 460 r. p.n.e.',
     description: 'Poliklet (ok. 480–415 p.n.e.) uchodzi za największego rzeźbiarza klasycznej Grecji. Działał w Atenach, w czasach Peryklesa, w okresie największej świetności tego miasta. W swojej twórczości skupił się na poszukiwaniach doskonałego sposobu przedstawiania postaci ludzkiej, tworząc najsłynniejszy antyczny kanon (obszerniej mówimy o nim przy rzeźbie Doryforosa). Już w starożytności zwracano uwagę na to, że bogowie, herosi i śmiertelnicy przedstawiani przez Polikleta nie różnią się od siebie – wszyscy są równie doskonali i piękni. Apollo – wielki bóg światła i wyroczni, opiekun sztuk – przedstawiony został w spokojnej, ale dość swobodnej pozie. Ze wszystkich znanych dzieł Polikleta właśnie Apollo Kitarodos najsilniej nawiązuje do dawnej tradycji sztuki greckiej, zarazem jednak zrywając z jej przyzwyczajeniami, czego wyrazem jest m.in. ukazanie go nago – podczas gdy wcześniej przedstawiany był zwykle w spływającej do ziemi szacie.
@@ -247,8 +266,6 @@ e16 = Exhibit.create(
 Cord.create(
     exhibit_id: e16.id,
     cord: "pos-eksp-16")
-
-
 e17 = Exhibit.create(
     title: 'Sokrates', 
     author:  'Silanion (?)',
@@ -261,8 +278,6 @@ e17 = Exhibit.create(
 Cord.create(
     exhibit_id: e17.id,
     cord: "pos-eksp-17")
-
-
 e18 = Exhibit.create(
     title: 'Eurypides', 
     author:  'Lizyp z Sykionu',
@@ -275,7 +290,6 @@ e18 = Exhibit.create(
 Cord.create(
     exhibit_id: e18.id,
     cord: "pos-eksp-18")
-
 e19 = Exhibit.create(
     title: 'Atena Lemina', 
     author:  'Fidiasz', 
@@ -290,8 +304,6 @@ e19 = Exhibit.create(
 Cord.create(
     exhibit_id: e19.id,
     cord: "pos-eksp-19")
-
-
 e20 = Exhibit.create(
     title: 'Homer', 
     author:  '',
@@ -304,8 +316,6 @@ e20 = Exhibit.create(
 Cord.create(
     exhibit_id: e20.id,
     cord: "pos-eksp-20")
-
-
 e21 = Exhibit.create(
     title: 'Aleksander Wielki', 
     author:  'Leochares (?)',
@@ -318,8 +328,6 @@ e21 = Exhibit.create(
 Cord.create(
     exhibit_id: e21.id,
     cord: "pos-eksp-21")
-
-
 e22 = Exhibit.create(
     title: 'Afrodyta Knidyjska', 
     author:  'Praksyteles z Aten', 
@@ -331,14 +339,23 @@ e22 = Exhibit.create(
     ex_id: '22',
     type: mitologia,
     big_photo: "http://kacpersalamon.pl/muzeum/bigphoto/22.png",
-    thumb_photo: "http://kacpersalamon.pl/muzeum/ikonki/21.png")
+    thumb_photo: "http://kacpersalamon.pl/muzeum/ikonki/21.png",
+        questions_attributes: [
+    { 
+     content: 'Dlaczego posąg przedstawia nagą Afrodytę?',
+     answers_attributes: [
+       {content: "ponieważ wchodzi ona do kąpieli", correct: true},
+       {content: "ponieważ idzie spać", correct: false},
+       {content: "ponieważ były niesamowicie gorące dni", correct: false}
+     ]
+   }
+ ]
+)
 Cord.create(
     exhibit_id: e22.id,
     cord: "pos-eksp-22")
-
-
 e23 = Exhibit.create(
-    title: 'Chłopiec wyciągający cierń ze stopy tzw. Spinario', 
+    title: 'Spinario', 
     author:  'Pazyteles',
     date_of_origin: '80-50 p.n.e.', 
     description: 'Posąg powstał trzysta lat po czasach Polikleta, utrzymany był jednak w duchu jego rzeźb, toteż gdy tworzono szczecińską kolekcję przypisywany był powszechnie temu mistrzowi. Twórcą dzieła był zapewne osiadły w Rzymie Grek Pazyteles, jeden z najsłynniejszych rzeźbiarzy I w. p.n.e., ceniony m.in, przez Cycerona. Wykonana z brązu rzeźba znaleziona został w Rzymie na początku renesansu i cieszyła się wielką popularnością jako rzadki przykład oryginału greckiego brązu. ', 
@@ -349,10 +366,8 @@ e23 = Exhibit.create(
 Cord.create(
     exhibit_id: e23.id,
     cord: "pos-eksp-23")
-
-
 e24 = Exhibit.create(
-    title: 'Młodzieniec tzw. Antinous', 
+    title: 'Antinous', 
     author:  '',
     date_of_origin: 'ok 50 p.n.e.', 
     description: 'Rzeźba, znaleziona w ruinach zasypanego przez popioły Wezuwiusza miasteczka Herkulanum, uważana była za portret Antinousa —młodzieńca uchodzącego w cesarskim Rzymie za ideał męskiego piękna, ulubieńca cesarza Hadriana (76-138 n.e.) Dzieło to powstało jednak o dwa stulecia wcześniej, nie może więc przedstawiać Antinousa. Odwołująca się do dzieł Polikleta rzeźba była zapewne wizerunkiem młodzieńczego bóstwa lub herosa. Jej autorem był prawdopodobnie grecki rzeźbiarz, działający - podobnie jak wielu jego rodaków — w rzymskiej Italii. ',  
@@ -363,9 +378,6 @@ e24 = Exhibit.create(
 Cord.create(
     exhibit_id: e24.id,
     cord: "pos-eksp-24")
-
-
-
 e25 = Exhibit.create(
     title: 'Herkulanka', 
     author:  '',
@@ -378,12 +390,11 @@ e25 = Exhibit.create(
 Cord.create(
     exhibit_id: e25.id,
     cord: "pos-eksp-25")
-
 e26 = Exhibit.create(
-    title: 'Artemida Brauronia tzw. Gabii', 
+    title: 'Artemida Brauronia', 
     author:  'Praksyteles',
     date_of_origin: 'ok. 350 r. p.n.e.', 
-    description: 'Posąg Artemidy — bogini lasów, łowów i źródeł — ustawiony był przy świątyni Ateny Brauronia na Akropolu w Atenach. Artemida była też patronką porodów dlatego szczególną czcią otaczały ją kobiety, składające bogini w ofierze szaty i drobne ozdoby. Kopię rzeźby Praksytelesa odnaleziono w 1792 r. w Gabii we Włoszech. stąd jej zwyczajowa nazwa.', 
+    description: 'Artemida tzw. Gabii — bogini lasów, łowów i źródeł — posąg ustawiony był przy świątyni Ateny Brauronia na Akropolu w Atenach. Artemida była też patronką porodów dlatego szczególną czcią otaczały ją kobiety, składające bogini w ofierze szaty i drobne ozdoby. Kopię rzeźby Praksytelesa odnaleziono w 1792 r. w Gabii we Włoszech. stąd jej zwyczajowa nazwa.', 
     ex_id: '26',
     type: mitologia,
     big_photo: "http://kacpersalamon.pl/muzeum/bigphoto/28.png",
@@ -391,9 +402,8 @@ e26 = Exhibit.create(
 Cord.create(
     exhibit_id: e26.id,
     cord: "pos-eksp-26")
-
 e27 = Exhibit.create(
-    title: 'Wiążący sandał tzw. Jazon', 
+    title: 'Jazon', 
     author:  'Lizyp lub jego naśladowca',
     date_of_origin: 'ok. 320 r. p.n.e.', 
     description: 'W myśl nowożytnej tradycji rzeźba przedstawiać miała Jazona — mitycznego bohatera, przywódcę wyprawy po złote runo. Głowę postaci zrekonstruowano w czasach nowożytnych.',  
@@ -404,9 +414,8 @@ e27 = Exhibit.create(
 Cord.create(
     exhibit_id: e27.id,
     cord: "pos-eksp-27")
-
 e28 = Exhibit.create(
-    title: 'APOLLO, tzw. Belwederski', 
+    title: 'Apollo', 
     author:  'Leochares', 
     date_of_origin: 'ok. 330 r. p.n.e.', 
     description: 'Twórca tego dzieła, pochodzący zapewne z Aten Leochares był w IV w. p.n.e., obok Praksytelesa, jednym z najsłynniejszych rzeźbiarzy greckich. Jego rzeźby zdobiły m.in. grobowiec władcy Halikarnasu w Azji Mniejszej, Mauzolosa, uznawany za jeden z siedmiu cudów świata. Posąg Apolla ustawiony był pierwotnie zapewne przy świątyni tego bóstwa na agorze (głównym placu) w Atenach. Leochares pokazał go w chwili, gdy właśnie zstąpił na ziemię i rusza do biegu. Apollo nie jest tu spokojnym i łagodnym opiekunem sztuki, lecz stanowczym i groźnym bóstwem, jakim często postrzegali go Grecy. Jeden z najbardziej znanych mitów o Apollu opowiada o zawodach muzycznych, do których wyzwał go satyr Marsjasz (pokazany na naszej wystawie z Ateną). Pokonawszy Marsjasza, Apollo kazał go obedrzeć ze skóry, chcąc w ten sposób ukarać go za zuchwałą chęć mierzenia się z bóstwem. 
@@ -414,12 +423,21 @@ e28 = Exhibit.create(
     ex_id: '28',
     type: mitologia,
     big_photo: "http://kacpersalamon.pl/muzeum/bigphoto/30.png",
-    thumb_photo: "http://kacpersalamon.pl/muzeum/ikonki/29.png")
+    thumb_photo: "http://kacpersalamon.pl/muzeum/ikonki/29.png",
+        questions_attributes: [
+    { 
+     content: 'Który z wybitnych artystów uzupełnił brakujące elementy posągu Apollo tzw. Belwederski?',
+     answers_attributes: [
+       {content: "Michał Anioł", correct: true},
+       {content: "Leonardo Da Vinci", correct: false},
+       {content: "Donatello", correct: false}
+     ]
+   }
+ ]
+)
 Cord.create(
     exhibit_id: e28.id,
     cord: "pos-eksp-28")
-
-
 e29 = Exhibit.create(
     title: 'Apoksjomenos', 
     author:  'Lizyp z Sykionu', 
@@ -435,8 +453,6 @@ e29 = Exhibit.create(
 Cord.create(
     exhibit_id: e29.id,
     cord: "pos-eksp-29")
-
-
 e30 = Exhibit.create(
     title: 'Demostenes', 
     author:  'Polieuktos', 
@@ -449,8 +465,6 @@ e30 = Exhibit.create(
 Cord.create(
     exhibit_id: e30.id,
     cord: "pos-eksp-30")
-
-
 e31 = Exhibit.create(
     title: 'Diadoch', 
     author:  'autor nieznany', 
@@ -463,8 +477,6 @@ e31 = Exhibit.create(
 Cord.create(
     exhibit_id: e31.id,
     cord: "pos-eksp-31")
-
-
 e32 = Exhibit.create(
     title: 'Odpoczywający Hermes', 
     author:  'Lizyp lub jego naśladowca',
@@ -477,8 +489,6 @@ e32 = Exhibit.create(
 Cord.create(
     exhibit_id: e32.id,
     cord: "pos-eksp-32")
-
-
 e33 =Exhibit.create(
     title: 'Lucius Caecilius Jucundus', 
     author:  '',
@@ -491,8 +501,6 @@ e33 =Exhibit.create(
 Cord.create(
     exhibit_id: e33.id,
     cord: "pos-eksp-33")
-
-
 e34 = Exhibit.create(
     title: 'Norbanus Soreks', 
     author:  '',
@@ -505,8 +513,6 @@ e34 = Exhibit.create(
 Cord.create(
     exhibit_id: e34.id,
     cord: "pos-eksp-34")
-
-
 e35 = Exhibit.create(
     title: 'Chłopiec z Gęsią', 
     author:  'Boetos z Chalcedonu',
@@ -519,7 +525,6 @@ e35 = Exhibit.create(
 Cord.create(
     exhibit_id: e35.id,
     cord: "pos-eksp-35")
-
 e36 = Exhibit.create(
     title: 'fragment malowidła ściennego z tzw. Gabinetów pompejańskich z pierwotnego wystroju muzeum', 
     author:  '',
@@ -532,7 +537,6 @@ e36 = Exhibit.create(
 Cord.create(
     exhibit_id: e36.id,
     cord: "pos-eksp-36")
-
 e37 = Exhibit.create(
     title: 'Śpiący Satyr', 
     author:  '',
@@ -545,7 +549,6 @@ e37 = Exhibit.create(
 Cord.create(
     exhibit_id: e37.id,
     cord: "pos-eksp-37")
-
 e38 = Exhibit.create(
     title: 'Orfeusz i Eurydyka prowadzeni przez Hermesa', 
     author:  'krąg Alkamenesa', 
@@ -559,21 +562,18 @@ e38 = Exhibit.create(
 Cord.create(
     exhibit_id: e38.id,
     cord: "pos-eksp-38")
-
 e39 = Exhibit.create(
     title: 'Pijany Satyr', 
     author:  '',
     date_of_origin: 'III w. p.n.e.', 
     description: 'Pierwowzór tej rzeźby - podobnie jak w przypadku „śpiącego Satyra” - pochodzi z wykopalisk pompejańskich. Wykonany z brązu posąg zdobił zapewne wnętrze rzymskiej willi.',  
     ex_id: '39',
-    type: sportowcy,
+    type: mitologia,
     big_photo: "http://kacpersalamon.pl/muzeum/bigphoto/41.png",
     thumb_photo: "http://kacpersalamon.pl/muzeum/ikonki/40.png")
 Cord.create(
     exhibit_id: e39.id,
     cord: "pos-eksp-39")
-
-
 e40 = Exhibit.create(
     title: 'Zapaśnicy', 
     author:  '',
@@ -586,13 +586,12 @@ e40 = Exhibit.create(
 Cord.create(
     exhibit_id: e40.id,
     cord: "pos-eksp-40")
-
 e41 = Exhibit.create(
     title: 'Amfora Rzymska z II wieku ', 
     author:  '',
     date_of_origin: 'II w.', 
     description: 'Znaleziona w morzu Adriatyckim przy wyspie Ugljan koło Zadaru na głębokości 70 m wydobyta przez płetwonurków Stoczni Szczecińskiej im. A. Warskiego
-    Jugosławia, sierpień 1969 r. przekazana załodze stoczni. styczeń 1970 rok. Amfora przekazana przez Stocznie Szczecińską Nową muzeum narodowemu w Szczecinie w ramach obchodów 60-lecia Stoczni Szczecińskiej 
+    Jugosławia, sierpień 1969 r. przekazana załodze stoczni. styczeń 1970 rok. Amfora przekazana przez Stocznie Szczecińską Nową muzeum narodowemu w Szczecinie w ramach obchodów 60-lecia Stoczni Szczecińskiej 
     Szczecin 23 sierpnia 2008r.', 
     ex_id: '41',
     type: nil,

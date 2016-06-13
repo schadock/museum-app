@@ -51,24 +51,25 @@
               <% for answer in question.answers %>
                 <div class="row">
                   <div class="col-xs-10 radio">
-                    <label class="checkbox">
-                    <input type="checkbox"/>
+                    <label>
+                    <button type="input" class="hey">
                       <%= answer.content %>
+                    </button>
                     </label>
-                    <div style="display:none;">
+                    <div class="ws">
                       <% if answer.correct %>
                         <div class="col-xs-12 question-correct">
                           Dobra odpowiedź
                         </div>
                         <% else %>
                         <div class="col-xs-12 question-wrong">
-                          <%= answer.correct %>
+                          Zła odpowiedź
                         </div>
                       <% end %>
                     </div>
                   </div>
                 </div>
-              <% end %>
+              <% end %> 
             <% end %>  
           </div>          
         </div>
@@ -87,7 +88,7 @@
 </div>
 
 <script>
-  $(".checkbox").click(function(){
-   $(this).next("div").toggle();    
+  $(".hey").click(function(){
+   $(this).next("div").show();    
   });
 </script>
