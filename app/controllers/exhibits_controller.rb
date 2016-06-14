@@ -4,11 +4,11 @@ class ExhibitsController < ApplicationController
   # GET /exhibits
   def index
     @types = Type.all
-    @exhibits = Exhibit.search(params[:keyword]).collection(params[:collection])
+    @exhibits = Exhibit.collection(params[:collection])
     @exhibits = @exhibits.collection(params[:collection]) if params[:collection].present?
   end
   def search
-    @q = "%#{params[:query]}%"
+    @q = "%#{params[:query].downcase}%"
     @exhibits = Exhibit.where("keywords LIKE ?", @q)
     render 'index'
   end
