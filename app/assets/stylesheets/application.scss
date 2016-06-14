@@ -28,6 +28,10 @@ main{
 	margin:0px auto 50px auto;
 }
 
+.exhibit-list {
+	margin-top: 10px;
+}
+
 .body-img{
 	background-image: url("/assets/bg.png");
 }
@@ -87,7 +91,7 @@ main{
 	color: #fff;
 	background-color: rgba(0,0,0,0);
 	border: 2px solid white;
-	margin-top: 50px;
+	margin-top: 10px;
 	font-size: 13pt;
 }
 
@@ -373,7 +377,6 @@ main{
 				main{
 					width:70%;
 				}
-
 				.footer-button{
 					margin-left: 0px;
 				}
