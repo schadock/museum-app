@@ -7,7 +7,11 @@ class ExhibitsController < ApplicationController
     @exhibits = Exhibit.search(params[:keyword]).collection(params[:collection])
     @exhibits = @exhibits.collection(params[:collection]) if params[:collection].present?
   end
-
+  def search
+    @q = "%#{params[:query]}%"
+    @exhibits = Exhibit.where("title LIKE ? or description LIKE ? or ex_id LIKE ?", @q, @q, @q)
+    render 'index'
+  end
   # GET /exhibits/1
   def show
     @types = Type.all

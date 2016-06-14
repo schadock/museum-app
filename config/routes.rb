@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get 'kolekcje' => "static_pages#collections", as: 'collections'
   get 'static_pages/tour'
   root 'static_pages#home'
+  #SEARCH
+  post 'exhibits/search' => 'exhibits#search', as: 'search_exhibits'
 end

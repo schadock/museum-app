@@ -37,11 +37,11 @@
         <a class="popover-link-bottom" data-container="body" data-html="true" data-toggle="popover" data-content='
             <ul class="fa-ul fa-ul2">
               <li class="search-menu-st">
-                <form>
-                  <label for="fname">Szukaj</label>
-                  <input class="form-control" type="text" id="fname" name="keyword" value="<%= params[:keyword] %>" >
+                <label for="fname">Szukaj</label>
+                <%= form_tag search_exhibits_path do %>
+                  <input name="query" placeholder="Szukaj" class="form-control" type"text" id="fname" autocomplete="off">
                   <button type="submit" class="btn btn-start">Szukaj</button>
-                </form>
+                <% end %>
               </li>
             </ul>
             ' title="">
