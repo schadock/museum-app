@@ -9,7 +9,7 @@ class ExhibitsController < ApplicationController
   end
   def search
     @q = "%#{params[:query]}%"
-    @exhibits = Exhibit.where("title LIKE ? or description LIKE ?", @q, @q)
+    @exhibits = Exhibit.where("keywords LIKE ?", @q)
     render 'index'
   end
   # GET /exhibits/1
