@@ -72,6 +72,11 @@
       <% end %>
       </br>
       <div class="form-group">
+        <div class="form-group col-sm-12">
+          <%= link_to_add_fields "Dodaj Pytanie", f, :questions %>
+        </div>  
+      </div>
+      <div class="form-group">
         <div class="col-sm-12">
           <%= f.submit 'Zapisz', :class=> 'btn btn-primary form-control' %>
         </div>

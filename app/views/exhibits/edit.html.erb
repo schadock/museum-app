@@ -2,6 +2,6 @@
 <h2>Edytuj eksponat</h2>
 
 <%= render 'form' %>
-
+<%= link_to "Usuń Eksponat", @exhibit, :method => :delete, data: {confirm: "Czy na pewno chcesz usunąć #{@exhibit.title}?"},:class=>"col-sm-12 btn btn-default" %>
 <%= link_to 'Wyświetl Eksponat', @exhibit %> |
 <%= link_to 'Wyjdź', exhibits_path %>

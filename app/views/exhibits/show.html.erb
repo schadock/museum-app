@@ -6,10 +6,9 @@
 </div>
 
 <div class="row"> 
-  <div class="col-xs-12">
-    <p id="notice"><%= notice %></p>  
+  <div class="col-xs-12">  
       <% if user_signed_in? %>
-        <%= link_to 'Edit', edit_exhibit_path(@exhibit), :class=> "btn btn-default" %> 
+        <%= link_to 'Modyfikuj eksponat', edit_exhibit_path(@exhibit), :class=> "col-sm-12 btn btn-default mod " %> 
       <% end %>
       
       <div class="row">

@@ -13,5 +13,10 @@
   <%= f.fields_for :answers do |buldier| %>
     <%= render 'answer_fields', :f => buldier %>
   <% end %>
+  <div class="form-group">
+    <div class="col-sm-12">
+      <%= link_to_add_fields "Dodaj Odpowiedzi", f, :answers %>
+    </div>
+  </div>
 </fieldset>
  
