@@ -31,6 +31,11 @@ main{
 .body-img{
 	background-image: url("/assets/bg.png");
 }
+.center {
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+}
 .center-img {
 	margin: 0 auto;
 	width: 100%;
@@ -365,6 +370,10 @@ main{
 			}
 
 			@media (min-width: 750px) {
+				main{
+					width:70%;
+				}
+
 				.footer-button{
 					margin-left: 0px;
 				}
@@ -427,6 +436,21 @@ main{
 	}
 }
 
+.odp {
+	background-color: #ececec;
+	margin: 2px 0px;
+	width: 100%;
+}
+
+.odp:hover {
+	background-color: black;
+	color: white;
+}
+
+.alert {
+	text-align: center;
+}
+
 .mapa{
 	background:white url(/assets/mapa.png) no-repeat 0 0;
 	width: 900px;
@@ -442,13 +466,6 @@ main{
     background-size: cover;
 }
 	
-	.question-correct{
-		background-color: green;
-	}
-	.question-wrong{
-		background-color: red;
-	}
-
 #pos-eksp-1{ position:absolute; width:65px; height:65px; top:127px; left:595px; }
 #pos-eksp-2{ position:absolute; width:60px; height:60px; top:197px; left:567px; }
 #pos-eksp-3{ position:absolute; width:40px; height:40px; top:275px; left:580px; }
