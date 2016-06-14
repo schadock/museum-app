@@ -7,11 +7,7 @@ class ExhibitsController < ApplicationController
     @exhibits = Exhibit.collection(params[:collection])
     @exhibits = @exhibits.collection(params[:collection]) if params[:collection].present?
   end
-  def search
-    @q = "%#{params[:query].downcase}%"
-    @exhibits = Exhibit.where("keywords LIKE ?", @q)
-    render 'index'
-  end
+
   # GET /exhibits/1
   def show
     @types = Type.all
@@ -38,7 +34,7 @@ class ExhibitsController < ApplicationController
     
     respond_to do |format|
       if @exhibit.save
-        format.html { redirect_to @exhibit, notice: 'Exhibit was successfully created.' }
+        format.html { redirect_to @exhibit, notice: 'Eksponat został stworzony' }
       else
         format.html { render :new }
       end
@@ -50,7 +46,7 @@ class ExhibitsController < ApplicationController
     @exhibit.type_id = params[:type_id]
     respond_to do |format|
       if @exhibit.update(exhibit_params)
-        format.html { redirect_to @exhibit, notice: 'Exhibit was successfully updated.' }
+        format.html { redirect_to @exhibit, notice: 'Eksponat został zaktualizowany' }
       else
         format.html { render :edit }
       end
@@ -61,8 +57,14 @@ class ExhibitsController < ApplicationController
   def destroy
     @exhibit.destroy
     respond_to do |format|
-      format.html { redirect_to exhibits_url, notice: 'Exhibit was successfully destroyed.' }
+      format.html { redirect_to exhibits_url, notice: 'Eksponat został usunięty' }
     end
+  end
+  
+  def search
+    @q = "%#{params[:query].downcase}%"
+    @exhibits = Exhibit.where("keywords LIKE ?", @q)
+    render 'index'
   end
 
   private

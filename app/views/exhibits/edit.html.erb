@@ -1,10 +1,7 @@
-<div class="container-fluid">
-  <div class="row mg-top center"> 
-    <h2>Edytuj eksponat</h2>
+<% provide(:title, "Edytuj") %>
+<h2>Edytuj eksponat</h2>
 
-    <%= render 'form' %>
+<%= render 'form' %>
 
-    <%= link_to 'Show', @exhibit %> |
-    <%= link_to 'Back', exhibits_path %>
-  </div>
-</div>
+<%= link_to 'Wyświetl Eksponat', @exhibit %> |
+<%= link_to 'Wyjdź', exhibits_path %>

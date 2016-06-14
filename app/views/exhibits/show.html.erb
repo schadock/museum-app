@@ -5,7 +5,6 @@
   </div>
 </div>
 
-
 <div class="row"> 
   <div class="col-xs-12">
     <p id="notice"><%= notice %></p>  
@@ -34,6 +33,7 @@
           </p>
         </div>
       </div>
+      
       <div class="row">
         <div class="col-xs-12"><p class="item-style3">Informacje</p></div>
       </div>  
@@ -44,6 +44,7 @@
           </p>
         </div>
       </div> 
+
       <% unless @exhibit.questions.blank? %>
         <div class="row">
           <div class="col-xs-12"><p class="item-style1">QUIZ</p>
@@ -73,6 +74,7 @@
         </div>
       <% end %>   
   </div>
+
   <div id="footer">
     <div class="footer-button">
       <% if @exhibit.previous %>
