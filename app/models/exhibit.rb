@@ -17,11 +17,11 @@ class Exhibit < ActiveRecord::Base
     self.keywords = [title, description, ex_id].map(&:to_s).map(&:downcase).join(' ')
   end
 
-  def previous
-    Exhibit.where(["id < ?", id]).last
-  end
-
   def next
     Exhibit.where(["id > ?", id]).first
+  end
+
+  def previous
+    Exhibit.where(["id < ?", id]).last
   end
 end
