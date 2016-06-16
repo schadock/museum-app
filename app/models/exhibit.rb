@@ -19,11 +19,11 @@ class Exhibit < ActiveRecord::Base
 
   def next
     #Exhibit.where(["id > ?", id]).first
-    Exhibit.order("ex_id").where("type_id <= ?", type_id).first
+    Exhibit.where("id > ? AND type_id = ?", id, type_id).first
   end
 
   def previous
     #Exhibit.where(["id < ?", id]).last
-    Exhibit.order("ex_id").where("type_id <= ?", type_id).last
+    Exhibit.where("id < ? AND type_id = ?", id, type_id).last
   end
 end

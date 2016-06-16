@@ -38,9 +38,16 @@
       </div>  
       <div class="row">
         <div class="col-xs-12">
-          <p class="item-style4">
+          <div class="pl">
            <%= @exhibit.description %>
-          </p>
+          </div>
+          <button class="btn heng">English Vesion</button>
+          <div class="eng">
+          <div class="row">
+            <div class="col-xs-12"><p class="item-style3">Description</p></div>
+          </div>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat 
+          </div>
         </div>
       </div> 
 
@@ -76,12 +83,10 @@
 
 <div id="footer">
     <div class="footer-button">
-      <% if @exhibit.previous %>
         <%= link_to "", @exhibit.previous, :class=> "fa fa-angle-left fa-3x footer-btn" %>
-      <% end %>
-      <% if @exhibit.next %>
+      
         <%= link_to "", @exhibit.next, :class=> "fa fa-angle-right fa-3x footer-btn" %>
-      <% end %>
+      
     </div>
   </div>
 </div>
@@ -90,5 +95,13 @@
   $('.spr').hide();
   $('.odp').on('click', function(e) {
     $(this).next().toggle('.spr'); 
+  });
+
+  $('.eng').hide();
+  $('.heng').on('click', function(z) {
+    $(this).next().toggle('.eng'); 
+  });
+  $('.hpl').on('click', function(x) {
+    $(this).next().toggle('.pl'); 
   });
 </script>
