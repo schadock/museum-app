@@ -7,7 +7,7 @@ class ExhibitsController < ApplicationController
     @exhibits = Exhibit.collection(params[:collection])
     @exhibits = @exhibits.collection(params[:collection]) if params[:collection].present?
   end
-
+ 
   # GET /exhibits/1
   def show
     @types = Type.all
